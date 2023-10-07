@@ -1,0 +1,210 @@
+/* Base Styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+  background-color: white;
+  position: relative;
+}
+
+
+.home--img .flying-birds {
+  width: 200px;
+  left: 20%;
+  position: absolute;
+  transform: translateY(-40px);
+}
+
+.home--img .fullStackImage {
+  width: 400px;
+}
+
+.home--content {
+  width: 500px;
+  height: 125px;
+  transform: translateY(-40px);
+}
+.home--content h2 {
+  text-align: center;
+  font-size: 15px;
+  word-spacing: 2px;
+  color: rgb(74 72 75);
+  transform: translateY(-50%);
+}
+.home--content p{
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(68, 66, 66);
+}
+.home--content h4 {
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 2px;
+  color: rgb(71 65 65);
+  transform: translateY(-50%);
+}
+.socialMedia{
+  width: 300px;
+  height: 150px;
+  /* background-color: red; */
+  margin: auto;
+  display: flex;
+}
+.socialMedia_icons{
+  width: 30px;
+  height: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.socialMedia_urls{
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url{
+font-size: 12px;
+margin-left: 4px;
+color: #0000ee;
+}
+.socialMedia_urls .github_url_div,.linkedin_url_div,.mail_url_div,.whatsapp_url_div{
+  transform: translateY(-4px);
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  .home {
+    flex-direction: column;
+    padding-top: 3rem;
+    overflow: hidden;
+  }
+  .intro{
+    margin: 10px;
+  }
+
+  .home--img .flying-birds {
+    width: 180px;
+    left: 30%;
+    position: absolute;
+    transform: translateY(-90px) !important;
+  }
+
+  .home--img .fullStackImage {
+    width: 305px;
+    transform: translateY(-80px) !important;
+  }
+  .home--content{
+    transform: translateY(-90px);
+  }
+
+  .socialMedia{
+    width: 250px;
+    height: 200px;
+    transform: translateX(-2%);
+  }
+
+
+  .home--content h4 {
+    font-size: 18px;
+    word-spacing: 2px;
+    transform: translateY(-30%);
+  }
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .home {
+      flex-direction: column;
+      padding-top: 3rem;
+      overflow: hidden;
+    }
+    .intro{
+      margin: 10px;
+    }
+  
+    .home--img .flying-birds {
+      width: 180px;
+      left: 30%;
+      position: absolute;
+      transform: translateY(-90px) !important;
+    }
+  
+    .home--img .fullStackImage {
+      width: 305px;
+      transform: translateY(-80px) !important;
+    }
+    .home--content{
+      transform: translateY(-90px);
+    }
+  
+    .socialMedia{
+      width: 250px;
+      height: 200px;
+      background-color: rgb(190, 228, 17);
+      transform: translateX(-2%);
+    }
+  
+  
+    .home--content h4 {
+      font-size: 18px;
+      word-spacing: 2px;
+      transform: translateY(-30%);
+    }
+  
+  
+  }
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .intro{
+    margin: 15px;
+  }
+
+  .home--img .flying-birds {
+    width: 180px;
+    left: 38%;
+    position: absolute;
+    transform: translateY(-20px);
+  }
+
+  .home--img .fullStackImage {
+    width: 300px;
+    transform: translateY(10px);
+  }
+
+  .home--content h4,h3 {
+    font-size: 16px;
+    transform: translateY(0%);
+  }
+
+  .home--content p {
+    width: 400px;
+    height: 100px;
+    font-size: 13px;
+    line-height: 22px;
+    transform: translateY(10px);
+  }
+  .socialMedia{
+    width: 250px;
+    height: 200px;
+    transform: translateX(-2%);
+  }
+}
+
