@@ -12,11 +12,7 @@ function About(params) {
         <div className="about--content">
           <h4 className="summaray">Summary:</h4>
           <p>
-            I have studied web development technologies HTML5, CSS3 and
-            JavaScript,Git,Githup,Azure, CSS Pre-processor: SCSS, CSS
-            Frameworks: Bootstrap 5, Tailwind CSS,Material UI, JavaScript
-            Library: React JS and Redux. I learned how to develop UI/UX web
-            pages with responsive and SEO.
+          I am a web developer proficient in both front-end (HTML5, CSS3, JavaScript, React.js, Redux) and back-end (Node.js, Express.js, MongoDB) technologies. I also have experience with version control (Git, GitHub), project management (Azure DevOps), and UI frameworks (Material-UI, Bootstrap).
           </p>
           <h4>Experience:</h4>
           <p>
