@@ -18,7 +18,7 @@ function Nav(params) {
       <nav className="nav">
         <div className="nav--logo" onClick={closeSideDrawer} >
           <NavLink to="/" className="nav--logo__img" style={{textDecoration:"none",color:'black'}}>
-            <h2>David</h2>
+            <h2 className="developer-name">David</h2>
           </NavLink>
         </div>
         <div className={icon ? "nav--menus show" : "nav--menus"}>

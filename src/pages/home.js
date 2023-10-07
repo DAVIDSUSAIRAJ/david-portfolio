@@ -3,9 +3,9 @@ import hero from "../images/web-design-illustration.png";
 import fly from "../images/flying-birds.png";
 import Hero from "../images/Home.png";
 import Linkedin from "../images/linkedin.png";
-import Mail from "../images/mail.jpg";
+import Mail from "../images/emailred.png";
 import Whatsapp from "../images/whatsapp.png";
-import Github from "../images/github.png";
+import Github from "../images/githubround.png";
 import FullStackImg from "../images/fullStack.webp";
 import "../scss/home.css";
 function Home(params) {
@@ -17,7 +17,7 @@ function Home(params) {
     <div>
       <div className="home">
         <div className="home--img">
-          <img src={fly} alt="flying-birds" className="flying-birds"></img>
+          {/* <img src={fly} alt="flying-birds" className="flying-birds"></img> */}
           <img
             src={FullStackImg}
             alt="FullStack-Developer image"
@@ -33,15 +33,15 @@ function Home(params) {
             <div className="socialMedia_icons">
               <div>
                 {" "}
-                <img src={Github} width={25} height={25}  loading="eager"></img>
+                <img src={Github} width={27} height={27}  loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Linkedin} width={30} height={30}  loading="eager"></img>
+                <img src={Linkedin} width={32} height={32}  loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Mail} width={25} height={25}  loading="eager"></img>
+                <img src={Mail} width={27} height={27}  loading="eager"></img>
               </div>
               <div>
                 {" "}
