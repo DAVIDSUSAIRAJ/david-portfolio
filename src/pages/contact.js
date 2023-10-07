@@ -132,7 +132,7 @@ function Contact(params) {
               </form>
             </div>
             <div className="contactp-card1--img">
-              <img src={email_illustration} alt="email--illustration"></img>
+              <img src={email_illustration} alt="email--illustration" loading="eager"></img>
             </div>
           </div>
         </div>

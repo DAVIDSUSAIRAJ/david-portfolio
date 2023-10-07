@@ -6,7 +6,7 @@ function About(params) {
     <div>
       <div className="about">
         <div className="about--img">
-          <img src={honorsAndAwards}  width = "200px"  height = "350px" alt="Honors and Awards image" className="honorsAndAwards"></img>
+          <img src={honorsAndAwards}  width = "200px"  height = "350px" alt="Honors and Awards image" className="honorsAndAwards" loading="eager"></img>
         </div>
 
         <div className="about--content">

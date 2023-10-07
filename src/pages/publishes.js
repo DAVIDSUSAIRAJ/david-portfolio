@@ -9,6 +9,7 @@ function Publishes(params) {
             src={hostAndDeployImage}
             alt="Honors and Awards image"
             className="deployImage"
+            loading="eager"
           ></img>
         </div>
 

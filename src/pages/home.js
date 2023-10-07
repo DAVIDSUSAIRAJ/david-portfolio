@@ -22,6 +22,7 @@ function Home(params) {
             src={FullStackImg}
             alt="FullStack-Developer image"
             className="fullStackImage"
+            loading="eager"
           ></img>
         </div>
 
@@ -32,19 +33,19 @@ function Home(params) {
             <div className="socialMedia_icons">
               <div>
                 {" "}
-                <img src={Github} width={25} height={25}></img>
+                <img src={Github} width={25} height={25}  loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Linkedin} width={30} height={30}></img>
+                <img src={Linkedin} width={30} height={30}  loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Mail} width={25} height={25}></img>
+                <img src={Mail} width={25} height={25}  loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Whatsapp} width={28} height={28}></img>
+                <img src={Whatsapp} width={28} height={28}  loading="eager"></img>
               </div>
             </div>
             <div className="socialMedia_urls">

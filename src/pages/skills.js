@@ -12,6 +12,7 @@ function Skills(params) {
             height="350px"
             alt="Honors and Awards image"
             className="honorsAndAwards"
+            loading="eager"
           ></img>
         </div>
 
