@@ -23,6 +23,9 @@
   transform: translateY(4px);
   cursor: pointer;
 }
+.white-TimesIcon, .white-BarIcon {
+  color: var(--black); /*this is like white color*/
+}
 
 /* //ACTIVE PROPERTY IN SCSS */
 .green {

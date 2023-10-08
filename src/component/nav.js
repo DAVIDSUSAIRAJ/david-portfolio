@@ -90,9 +90,9 @@ function Nav(props) {
         </div>
         <div className="nav-icons" onClick={menuClick}>
           {icon ? (
-            <FaTimes className="fa-times"></FaTimes>
+            <FaTimes className={`fa-times ${isdarkTheme ? 'white-TimesIcon' : ''}`}></FaTimes>
           ) : (
-            <FaBars className="fa-bars"></FaBars>
+            <FaBars  className={`fa-bars ${isdarkTheme ? 'white-BarIcon' : ''}`}></FaBars>
           )}
         </div>
       </nav>
