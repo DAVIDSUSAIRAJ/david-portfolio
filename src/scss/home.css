@@ -109,7 +109,7 @@ color: #0000ee;
 @media only screen and (max-width: 576px) {
   .home {
     flex-direction: column;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     overflow: hidden;
   }
   .intro{
@@ -125,10 +125,11 @@ color: #0000ee;
 
   .home--img .fullStackImage {
     width: 305px;
+    height: 260px;
     transform: translateY(-90px) !important;
   }
   .home--content{
-    transform: translateY(-150px);
+    transform: translateY(-130px);
   }
 
   .socialMedia{
