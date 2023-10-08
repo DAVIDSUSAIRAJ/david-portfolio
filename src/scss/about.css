@@ -1,3 +1,14 @@
+:root {
+  --color: rgb(68, 66, 66);
+  --aboutbgColor:white;
+
+
+}
+.dark-theme {
+  --color: rgb(246, 244, 244);
+  --aboutbgColor:rgb(31, 31, 31);
+}
+
 /* Base Styles */
 .about {
   display: flex;
@@ -6,7 +17,7 @@
   width: 100vw;
   height: 100vh;
   gap: 20px;
-  background-color: white;
+  background-color: var(--aboutbgColor);
   position: relative;
 }
 
@@ -33,13 +44,8 @@
   word-spacing: 1px;
   font-size: 15px;
   line-height: 20px;
-  color: rgb(68, 66, 66);
+  color: var(--color);
 }
-
-
-
-
-
 
 /* Media Queries */
 @media only screen and (max-width: 576px) {
@@ -48,28 +54,23 @@
     padding-top: 1rem;
     /* background-color: red; */
     overflow-y: scroll;
+    height: 1200px;
   }
 
 
   .about--img .honorsAndAwards {
     width: 200px;
     height: 200px;
-    transform: translateY(-34px);
-  }
-
-  .about--content {
-    font-size: 18px;
-    word-spacing: 1px;
-    transform: translateY(-20%);
+    transform: translateY(-340px);
   }
 
   .about--content {
     width: 200px;
-    height: 250px;
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 23px;
-    color: rgb(68, 66, 66);
+    color: var(--color);
+    transform: translateY(-350px);
   }
 }
 
