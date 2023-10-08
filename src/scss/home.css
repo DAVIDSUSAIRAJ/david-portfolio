@@ -1,3 +1,19 @@
+:root {
+  --color: rgb(12, 12, 12);
+  --homebgColor:white;
+  --h4Color:rgb(71 65 65);
+  --h2Color:rgb(74 72 75);
+
+}
+.dark-theme {
+  --color: rgb(246, 244, 244);
+  --homebgColor:rgb(31, 31, 31);
+  --h4Color:rgb(246, 244, 244);
+  --h2Color:rgb(230, 230, 230);
+}
+
+
+
 /* Base Styles */
 .home {
   display: flex;
@@ -6,7 +22,7 @@
   width: 100vw;
   height: 100vh;
   gap: 20px;
-  background-color: white;
+  background-color: var(--homebgColor) !important;
   position: relative;
 }
 
@@ -33,7 +49,7 @@
   text-align: center;
   font-size: 15px;
   word-spacing: 2px;
-  color: rgb(74 72 75);
+  color: var(--h2Color);
   transform: translateY(-50%);
 }
 .home--content p{
@@ -48,7 +64,7 @@
   text-align: center;
   font-size: 25px;
   word-spacing: 2px;
-  color: rgb(71 65 65);
+  color: var(--h4Color);
   transform: translateY(-50%);
 }
 .socialMedia{
@@ -109,10 +125,10 @@ color: #0000ee;
 
   .home--img .fullStackImage {
     width: 305px;
-    transform: translateY(-80px) !important;
+    transform: translateY(-90px) !important;
   }
   .home--content{
-    transform: translateY(-90px);
+    transform: translateY(-150px);
   }
 
   .socialMedia{
@@ -127,6 +143,10 @@ color: #0000ee;
     word-spacing: 2px;
     transform: translateY(-30%);
   }
+  .socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url{
+    font-size: 14px;
+    }
+  
 
 
 }
@@ -134,8 +154,9 @@ color: #0000ee;
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .home {
       flex-direction: column;
-      padding-top: 3rem;
-      overflow: hidden;
+      /* padding-top: -3rem; */
+      height: 650px;
+      /* overflow: hidden; */
     }
     .intro{
       margin: 10px;
@@ -145,21 +166,21 @@ color: #0000ee;
       width: 180px;
       left: 30%;
       position: absolute;
-      transform: translateY(-90px) !important;
+      transform: translateY(-190px) !important;
     }
   
     .home--img .fullStackImage {
       width: 305px;
-      transform: translateY(-80px) !important;
+      transform: translateY(-100px) !important;
     }
     .home--content{
-      transform: translateY(-90px);
+      transform: translateY(-150px);
     }
   
     .socialMedia{
       width: 250px;
       height: 200px;
-      background-color: rgb(190, 228, 17);
+      /* background-color: rgb(190, 228, 17); */
       transform: translateX(-2%);
     }
   
@@ -176,7 +197,8 @@ color: #0000ee;
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .home {
     flex-direction: column;
-    padding-top: 1rem;
+    height: 750px;
+    /* padding-top: 1rem; */
   }
   .intro{
     margin: 15px;
@@ -191,7 +213,10 @@ color: #0000ee;
 
   .home--img .fullStackImage {
     width: 300px;
-    transform: translateY(10px);
+    transform: translateY(-130px);
+  }
+  .home--content {
+    transform: translateY(-180px);
   }
 
   .home--content h4,h3 {
