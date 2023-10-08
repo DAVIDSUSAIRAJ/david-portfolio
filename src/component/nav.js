@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../component/nav.css";
-import { FaBars, FaTimes } from "react-icons/fa";
-import tree from "../images/logo-tree.jpg";
+import { FaBars, FaTimes, PiSunLight } from "react-icons/fa";
+import SunLight from "../images/sunlight.png";
+import Moon from "../images/darkThemeIcon.png";
 import { useState } from "react";
-function Nav(params) {
+function Nav(props) {
   const [icon, setIcon] = useState(false);
+  const [isdarkTheme, setIsDarkTheme] = useState(false);
 
   const menuClick = () => {
     setIcon(!icon);
@@ -12,14 +14,29 @@ function Nav(params) {
   const closeSideDrawer = () => {
     setIcon(false);
   };
+  const changeTheme = () => {
+    document.body.classList.toggle("dark-theme");
+    setIsDarkTheme(!isdarkTheme);
+  };
 
   return (
     <div>
       <nav className="nav">
-        <div className="nav--logo" onClick={closeSideDrawer} >
-          <NavLink to="/" className="nav--logo__img" style={{textDecoration:"none",color:'black'}}>
-            <h2 className="developer-name">David</h2>
+        <div className="nav--logo" onClick={closeSideDrawer}>
+          <NavLink
+            to="/"
+            className="nav--logo__img"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <span className="developer-name">David</span>
           </NavLink>
+          <span onClick={changeTheme}>
+            {isdarkTheme ? (
+              <img src={SunLight} className="sun-light" />
+            ) : (
+              <img src={Moon}  className="moon"/>
+            )}
+          </span>
         </div>
         <div className={icon ? "nav--menus show" : "nav--menus"}>
           <ul className="nav--menus--ul">
