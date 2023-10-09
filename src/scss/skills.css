@@ -1,14 +1,16 @@
 :root {
-  --color: rgb(68, 66, 66);
+  --skillsColor: rgb(68, 66, 66);
   --skillsbgColor:white;
   --themeColor:rgb(128 5 251);
+  --skillsImageOpacity:1.0;
 
 
 }
 .dark-theme {
-  --color: rgb(246, 244, 244);
+  --skillsColor: #c5c5c5;
   --skillsbgColor:rgb(31, 31, 31);
   --themeColor:rgb(128 5 251);
+  --skillsImageOpacity:0.8;
 }
 
 
@@ -27,6 +29,7 @@
   
   .skills--img .honorsAndAwards {
     width: 400px;
+    opacity: var(--skillsImageOpacity);
   }
   
   .skills--content {
@@ -61,11 +64,11 @@
   .frontend-content{
     line-height: 20px;
     margin: 5px;
-    color: var(--color);
+    color: var(--skillsColor);
   }
   .backend-content{
     margin: 5px;
-    color:var(--color);
+    color:var(--skillsColor);
   }
   
   

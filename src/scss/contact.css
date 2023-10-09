@@ -1,6 +1,19 @@
+:root {
+  --contactColor: rgb(68, 66, 66);
+  --contactbgColor:white;
+  --contactImageOpacity:1.0;
+
+}
+.dark-theme {
+  --contactColor: #c5c5c5;
+  --contactbgColor:rgb(31, 31, 31);
+  --contactImageOpacity:0.8;
+}
+
+
+
 /* Base Styles */
 .contactp {
-  /* background-color: rgb(240, 238, 238); */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -12,6 +25,7 @@
   width: 70%;
   height: 400px;
   transform: translateY(-30px);
+  background-color: var(--contactbgColor);
 }
 
 .contactp-card1 {
@@ -28,14 +42,14 @@
 }
 
 .contactp-card1 h4 {
-  color: rgb(128 5 251);
+  color: var(--themeColor);
 }
 
 .contactp-card1 .name,
 .contactp-card1 .feedback {
   font-size: 14px;
   padding: 7px 0px;
-  color: gray;
+  color: var(--contactColor);
   display: inline-block;
 }
 
@@ -45,7 +59,8 @@
   border: 2px solid transparent;
   color: rgb(240, 233, 233);
   outline: none;
-  background-color: rgb(128 5 251);
+  background-color: var(--themeColor);
+  opacity: var(--contactImageOpacity);
   padding: 10px;
   border-radius: 5px;
   font-size: 13px;
@@ -71,14 +86,15 @@ textarea::placeholder {
   border-radius: 5px;
   border: none;
   outline: none;
-  background-color: rgb(128 5 251);
+  background-color: var(--themeColor);
+  opacity: var(--contactImageOpacity);
   cursor: pointer;
   transition: 0.3s;
   color: white;
 }
 
 .contactp-card1 .contact-send-btn:hover {
-  background-color: rgb(85, 4, 167);
+  background-color: var(--themeColor);
 }
 
 .contactp-card1 .name-feed,
@@ -98,7 +114,9 @@ textarea::placeholder {
 .contactp-card1--img img {
   margin-left: 50px;
   width: 300px;
+  opacity: var(--contactImageOpacity);
 }
+
 
 /* Media Queries */
 @media only screen and (max-width: 576px) {
@@ -148,7 +166,7 @@ textarea::placeholder {
 
   .contactp-card {
     width: 100vw;
-    height: 100vh;
+    height: 500px;
   }
 
   .contactp-card1 {
@@ -161,10 +179,11 @@ textarea::placeholder {
   .contactp-card1--form {
     margin-left: 30px;
     width: 20rem;
+    transform: translateY(14px);
   }
 
   .contactp-card1--form h4 {
-    color: green;
+    /* color: green; */
     font-size: 15px;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -174,7 +193,7 @@ textarea::placeholder {
   .contactp-card1--form .feedback {
     font-size: 12px;
     padding: 2px 0px;
-    color: gray;
+    /* color: gray; */
     display: inline-block;
   }
 
@@ -200,12 +219,12 @@ textarea::placeholder {
   }
 
   .contactp-card1--img {
-    width: 130px;
+    width: 190px;
   }
 
   .contactp-card1--img img {
-    margin-left: 90px;
-    width: 130px;
+    margin-left: 20px;
+    width: 240px;
   }
 }
 
@@ -217,7 +236,7 @@ textarea::placeholder {
 
   .contactp-card {
     width: 100vw;
-    height: 100vh;
+    height: 700px;
   }
 
   .contactp-card1 {
@@ -231,7 +250,7 @@ textarea::placeholder {
     margin-left: 0px;
     flex-grow: 0;
     width: 70vw;
-    transform: translateY(30px);
+    transform: translateY(120px);
   }
 
   .contactp-card1--form h4 {
@@ -247,7 +266,7 @@ textarea::placeholder {
   .contactp-card1--img img {
     margin-left: 0px;
     width: 350px;
-    transform: translateY(-28px);
+    transform: translateY(100px);
   }
 }
 

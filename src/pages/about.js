@@ -12,7 +12,7 @@ function About(params) {
         <div className="about--content">
           <h4 className="summaray">Summary:</h4>
           <p>
-          I am a web developer proficient in both front-end (HTML5, CSS3, JavaScript, React.js, Redux) and back-end (Node.js, Express.js, MongoDB) technologies. I also have experience with version control (Git, GitHub), project management (Azure DevOps), and UI frameworks (Material-UI, Bootstrap).
+          I am a web developer proficient in both front-end <strong>(HTML5, CSS3, JavaScript, React.js, Redux)</strong> and back-end <strong>(Node.js, Express.js, MongoDB)</strong> technologies. I also have experience with version control <strong>(Git, GitHub)</strong>, project management <strong>(Azure DevOps)</strong>, and UI frameworks <strong>(Material-UI, Bootstrap)</strong>.
           </p>
           <h4>Experience:</h4>
           <p>
@@ -23,10 +23,10 @@ function About(params) {
           <p>
             {" "}
             H.H. The Rajah's College, Pudukkottai - 622 001. Master of
-            Philosophy in Mathematics (MPhil), 2018–2020.
+            Philosophy in Mathematics <strong>(MPhil)</strong>, 2018–2020.
           </p>
           <h4>Honors & Awards:</h4>
-           <p>2021 National Champion in Silambam.</p>
+           <p>2021 <strong>National Champion</strong> in Silambam.</p>
         </div>
       </div>
     </div>

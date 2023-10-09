@@ -1,15 +1,15 @@
 
 :root {
-  --color: rgb(12, 12, 12);
-  --bgColor:rgb(246, 244, 244);
+  --navColor: rgb(12, 12, 12);
+  --navbgColor:rgb(246, 244, 244);
   --themeColor:rgb(128 5 251);
-  --mobileBackgroundColor:rgb(237, 243, 237);
+  --navMobileBackgroundColor:rgb(237, 243, 237);
 }
 .dark-theme {
-  --color: rgb(246, 244, 244);
-  --bgColor:rgb(12, 12, 12);
+  --navColor: rgb(246, 244, 244);
+  --navbgColor:rgb(12, 12, 12);
   --themeColor:rgb(128 5 251);
-  --mobileBackgroundColor:rgb(31, 31, 31);
+  --navMobileBackgroundColor:rgb(31, 31, 31);
 }
 .sun-light{
   width: 24px;
@@ -26,7 +26,7 @@
   cursor: pointer;
 }
 .white-TimesIcon, .white-BarIcon {
-  color: var(--color); /*this is like white color*/
+  color: var(--navColor); /*this is like white color*/
 }
 
 /* //ACTIVE PROPERTY IN SCSS */
@@ -59,7 +59,7 @@
 
 
 .black {
-  color: var(--color);
+  color: var(--navColor);
   text-decoration: none;
   font-weight: 600;
   font-size: 12px;
@@ -91,7 +91,7 @@
 /* // GENERAL MEDIA DEVICE */
 
 .nav {
-  background-color: var(--bgColor);
+  background-color: var(--navbgColor);
   position: fixed;
   top: 0%;
   left: 0%;
@@ -129,7 +129,7 @@
 }
 
 .nav--menus--ul__li .dropdown .dropbtn {
-  color: var(--color);
+  color: var(--navColor);
   font-weight: 600;
   font-size: 12px;
   padding: 6px 0px;
@@ -169,7 +169,7 @@
 .developer-name{
   font-size: 24px; 
   font-weight: bold; 
-  color: var(--color);
+  color: var(--navColor);
 }
 
 
@@ -205,7 +205,7 @@
     top: -120%;
     width: 100vw;
     height: 100vh;
-    background-color: var(--mobileBackgroundColor);
+    background-color: var(--navMobileBackgroundColor);
     transition: 0.5s;
     z-index: 100;
   }
@@ -217,7 +217,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: var(--color);
+    color: var(--navColor);
   }
 
   .nav--menus--ul__li {
@@ -265,7 +265,7 @@
     top: 10%;
     width: 100vw;
     height: 100vh;
-    background-color: var(--mobileBackgroundColor);
+    background-color: var(--navMobileBackgroundColor);
     transition: 0.5s;
     z-index: 100;
   }
@@ -278,7 +278,7 @@
     align-items: center;
     height: 50vh;
     justify-content: space-around;
-    color: var(--color);
+    color: var(--navColor);
   }
 
   .nav--menus--ul__li {
@@ -328,7 +328,7 @@
     top: 100%;
     width: 100vw;
     height: 100vh;
-    background-color: var(--bgColor);
+    background-color: var(--navbgColor);
     transition: 0.5s;
     z-index: 100;
   }
@@ -341,7 +341,7 @@
     align-items: center;
     height: 50vh;
     justify-content: space-around;
-    color: var(--color);
+    color: var(--navColor);
   }
 
   .nav--menus--ul__li {

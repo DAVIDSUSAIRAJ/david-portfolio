@@ -1,24 +1,26 @@
 
 :root {
-  --color: rgb(68, 66, 66);
+  --publishesColor: rgb(68, 66, 66);
   --publishesbgColor:white;
   --themeColor:rgb(128 5 251);
-  --boxShadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  --marginTop: 95px;
-  --width: 480px;
-  --height: 480px;
-
-
+  --publishesBoxShadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  --publishesMarginTop: 95px;
+  --publishesWidth: 480px;
+  --publishesHeight: 480px;
+  --publishesAnchorTagColor: rgb(128 5 251);
+  --publishesImageOpacity:1.0;
 }
 
 .dark-theme {
-  --color: rgb(246, 244, 244);
+  --publishesColor: #c5c5c5;
   --publishesbgColor:rgb(31, 31, 31);
-  --boxShadow: rgba(248, 248, 248, 0.3) 0px 1px 2px 0px, rgba(251, 251, 252, 0.15) 0px 1px 3px 1px;
   --themeColor:rgb(128 5 251);
-  --marginTop: 70px;
-  --width: 480px;
-  --height: 450px;
+  --publishesBoxShadow: rgba(248, 248, 248, 0.3) 0px 1px 2px 0px, rgba(251, 251, 252, 0.15) 0px 1px 3px 1px;
+  --publishesMarginTop: 70px;
+  --publishesWidth: 480px;
+  --publishesHeight: 458px;
+  --publishesAnchorTagColor: #58a6ff;
+  --publishesImageOpacity:0.8;
 }
 /* Base Styles */
 .publishes {
@@ -31,11 +33,16 @@
     background-color: var(--publishesbgColor);
     position: relative;
   }
+  .publishes--content a{
+    color: var(--publishesAnchorTagColor);
+
+  }
   
   .publishes--img .deployImage {
-    margin-top: var(--marginTop);
-    width: var(--width);
-    height: var(--height);
+    margin-top: var(--publishesMarginTop);
+    width: var(--publishesWidth);
+    height: var(--publishesHeight);
+    opacity: var(--publishesImageOpacity);
   }
   
   .publishes--content h4{
@@ -50,7 +57,7 @@
     word-spacing: 1px;
     font-size: 17px;
     line-height: 20px;
-    color: var(--color);
+    color: var(--publishesColor);
   }
   
   .none {
@@ -61,7 +68,7 @@
     display: inline;
   }
   .webapp{
-  box-shadow: var(--boxShadow);
+  box-shadow: var(--publishesBoxShadow);
   padding: 5px;
   margin: 5px;
   word-wrap: break-word;
@@ -89,7 +96,6 @@
       height: 250px;
       text-align: justify;
       line-height: 23px;
-      color: rgb(68, 66, 66);
       word-spacing: 1px;
       transform: translateY(-310px);
     }

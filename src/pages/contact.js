@@ -61,7 +61,11 @@ function Contact(params) {
     // window.location.href =
     //   "mailto:enteryourmailid@gamil.com?name=" + name + "&textarea=" + textarea;
     e.preventDefault();
+   try {
     axios.post("https://portfolio-feedback.onrender.com/api/feedbacks/",details)
+   } catch (error) {
+    alert("Network Error.")
+   }
 
     alert(`Thanks ${details.name}. Your feedback has submited`);
     setNamefeed("");

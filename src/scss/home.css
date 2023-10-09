@@ -1,15 +1,19 @@
 :root {
-  --color: rgb(12, 12, 12);
+  --homeColor: rgb(12, 12, 12);
   --homebgColor:white;
-  --h4Color:rgb(71 65 65);
-  --h2Color:rgb(74 72 75);
+  --homeh4Color:rgb(71 65 65);
+  --homeh2Color:rgb(74 72 75);
+  --homeAnchorTagColor: rgb(128 5 251);
+  --homeImageOpacity:1.0;
 
 }
 .dark-theme {
-  --color: rgb(246, 244, 244);
+  --homeColor: rgb(246, 244, 244);
   --homebgColor:rgb(31, 31, 31);
-  --h4Color:rgb(246, 244, 244);
-  --h2Color:rgb(230, 230, 230);
+  --homeh4Color:#cccccc;
+  --homeh2Color:#c5c5c5;
+  --homeAnchorTagColor: #58a6ff;
+  --homeImageOpacity:0.9;
 }
 
 
@@ -38,6 +42,7 @@
   width: 400px;
   height: 320px;
   transform: translateY(-20px);
+  opacity: var(--homeImageOpacity);
 }
 
 .home--content {
@@ -49,7 +54,7 @@
   text-align: center;
   font-size: 15px;
   word-spacing: 2px;
-  color: var(--h2Color);
+  color: var(--homeh2Color);
   transform: translateY(-50%);
 }
 .home--content p{
@@ -64,7 +69,7 @@
   text-align: center;
   font-size: 25px;
   word-spacing: 2px;
-  color: var(--h4Color);
+  color: var(--homeh4Color);
   transform: translateY(-50%);
 }
 .socialMedia{
@@ -91,10 +96,13 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+.socialMedia_urls a{
+  color: var(--homeAnchorTagColor) ;
+  opacity: var(--homeImageOpacity);
+}
 .socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url{
 font-size: 13px;
 margin-left: 4px;
-color: #0000ee;
 }
 .socialMedia_urls .linkedin_url_div,.whatsapp_url_div{
   transform: translateY(-4px);
