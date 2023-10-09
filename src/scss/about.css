@@ -1,12 +1,14 @@
 :root {
   --color: rgb(68, 66, 66);
   --aboutbgColor:white;
+  --themeColor:rgb(128 5 251);
 
 
 }
 .dark-theme {
   --color: rgb(246, 244, 244);
   --aboutbgColor:rgb(31, 31, 31);
+  --themeColor:rgb(128 5 251);
 }
 
 /* Base Styles */
@@ -29,11 +31,11 @@
   text-align: center;
   font-size: 25px;
   word-spacing: 1px;
-  color: rgb(128 5 251);
+  color: var(--themeColor);
   transform: translateY(-90%);
 }
 .about--content h4{
-  color: rgb(128 5 251);
+  color: var(--themeColor);
 }
 
 .about--content {

@@ -1,3 +1,18 @@
+:root {
+  --color: rgb(68, 66, 66);
+  --skillsbgColor:white;
+  --themeColor:rgb(128 5 251);
+
+
+}
+.dark-theme {
+  --color: rgb(246, 244, 244);
+  --skillsbgColor:rgb(31, 31, 31);
+  --themeColor:rgb(128 5 251);
+}
+
+
+
 /* Base Styles */
 .skills {
     display: flex;
@@ -6,7 +21,7 @@
     width: 100vw;
     height: 100vh;
     gap: 20px;
-    background-color: white;
+    background-color: var(--skillsbgColor);
     position: relative;
   }
   
@@ -18,11 +33,11 @@
     text-align: center;
     font-size: 25px;
     word-spacing: 1px;
-    color: rgb(128 5 251);
+  color: var(--themeColor);
     transform: translateY(10%);
   }
   .skills--content h4{
-    color: rgb(128 5 251);
+    color: var(--themeColor);
   }
   
   .skills--content {
@@ -43,6 +58,15 @@
   .block {
     display: inline;
   }
+  .frontend-content{
+    line-height: 20px;
+    margin: 5px;
+    color: var(--color);
+  }
+  .backend-content{
+    margin: 5px;
+    color:var(--color);
+  }
   
   
   
@@ -58,7 +82,7 @@
   
     .skills--img .honorsAndAwards {
       width: 300px;
-      height: 300px;
+      height: 260px;
       transform: translateY(24px);
     }
   
@@ -69,10 +93,10 @@
     }
   
     .skills--content {
-      width: 200px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       text-align: justify;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 23px;
       color: rgb(68, 66, 66);
     }
@@ -82,12 +106,13 @@
     .skills {
       flex-direction: column;
       padding-top: 1rem;
+      height: 800px;
     }
   
     .skills--img .honorsAndAwards {
-      width: 300px;
-      height: 300px;
-      transform: translateY(10px);
+      width: 400px;
+      height: 350px;
+      transform: translateY(-120px);
     }
   
     .skills--content {
@@ -99,7 +124,7 @@
       height: 100px;
       font-size: 12px;
       line-height: 22px;
-      transform: translateY(-13px);
+      transform: translateY(-130px);
       margin: 5px;
     }
   }
@@ -108,17 +133,13 @@
     .skills {
       flex-direction: column;
       padding-top: 1rem;
+      height: 800px;
     }
   
     .skills--img .honorsAndAwards {
-      width: 300px;
+      width: 400px;
       height: 350px;
-      transform: translateY(10px);
-    }
-  
-    .skills--content {
-      font-size: 16px;
-      transform: translateY(0%);
+      transform: translateY(-100px);
     }
   
     .skills--content {
@@ -126,7 +147,7 @@
       height: 100px;
       font-size: 13px;
       line-height: 22px;
-      transform: translateY(10px);
+      transform: translateY(-100px);
     }
   }
   
