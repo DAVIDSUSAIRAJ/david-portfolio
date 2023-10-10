@@ -2,12 +2,20 @@
   --contactColor: rgb(68, 66, 66);
   --contactbgColor:white;
   --contactImageOpacity:1.0;
+  --inputbgColor:rgb(238 233 237);
+  --inputplaceholderColor:black;
+  --inputFocusColor:rgb(68, 66, 66);
+  --inputTextColor:black;
 
 }
 .dark-theme {
   --contactColor: #c5c5c5;
   --contactbgColor:rgb(31, 31, 31);
   --contactImageOpacity:0.8;
+  --inputbgColor:rgb(158, 156, 156);
+  --inputplaceholderColor:white;
+  --inputFocusColor:#f7f2f2;
+  --inputTextColor:white;
 }
 
 
@@ -61,10 +69,9 @@
 .contactp-card1 .textareaInput {
   width: 100%;
   border: 2px solid transparent;
-  color: rgb(240, 233, 233);
+  color: var(--inputTextColor);
   outline: none;
-  background-color: var(--themeColor);
-  opacity: var(--contactImageOpacity);
+  background-color: var(--inputbgColor);
   padding: 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -72,12 +79,12 @@
 }
 input::placeholder,
 textarea::placeholder {
-    color: rgb(224, 221, 221);
+    color: var(--inputplaceholderColor);
 }
 
 .contactp-card1 .nameInput:focus,
 .contactp-card1 .textareaInput:focus {
-  border: 2px solid var(--contactColor);
+  border: 2px solid var(--inputFocusColor);
 }
 
 .contactp-card1 .textareaInput {

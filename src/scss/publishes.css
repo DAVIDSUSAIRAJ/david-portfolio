@@ -9,6 +9,7 @@
   --publishesHeight: 480px;
   --publishesAnchorTagColor: rgb(128 5 251);
   --publishesImageOpacity:1.0;
+  --imageGrayStyle:grayscale(10%);
 }
 
 .dark-theme {
@@ -21,6 +22,8 @@
   --publishesHeight: 458px;
   --publishesAnchorTagColor: #58a6ff;
   --publishesImageOpacity:0.8;
+  --imageGrayStyle:grayscale(50%);
+  
 }
 /* Base Styles */
 .publishes {
@@ -42,7 +45,9 @@
     margin-top: var(--publishesMarginTop);
     width: var(--publishesWidth);
     height: var(--publishesHeight);
-    opacity: var(--publishesImageOpacity);
+    /* opacity: var(--publishesImageOpacity); */
+    -webkit-filter: var(--imageGrayStyle); /* Safari 6.0 - 9.0 */
+    filter: var(--imageGrayStyle);
   }
   
   .publishes--content h4{

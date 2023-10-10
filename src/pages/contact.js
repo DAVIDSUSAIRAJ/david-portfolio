@@ -128,7 +128,7 @@ function Contact(params) {
                 ></textarea>
                 <br></br>
                 <i className="text-feed">{textarea}</i>
-                <span style={{ visibility: "hidden" }}>.</span>
+                <span style={{ visibility: "hidden",}}>.</span>
                 <br></br>
                 <button title="Send in Gamil" className="contact-send-btn">
                   Send
