@@ -10,6 +10,7 @@ function Contact(params) {
 
   const [namefeed, setNamefeed] = useState("");
   const [textarea, setTextarea] = useState("");
+  const [isValid,setIsValid] = useState(false);
   const handleChange = (e) => {
     const keyname = e.target.name;
     const value = e.target.value;
@@ -27,13 +28,15 @@ function Contact(params) {
         setNamefeed("WOW! looks good.");
         const feedColor = document.querySelector(".name-feed");
         feedColor.style.color = "green";
+        setIsValid(true);
       } else {
         setNamefeed("* please check your input feild!! *");
         const feedColor = document.querySelector(".name-feed");
         feedColor.style.color = "red";
+        setIsValid(false);
       }
     }
-
+  
     // CONTACT TEXTAREA AND INPUT FEILD
     if (keyname == "feedback") {
       let alphabets = /^[a-zA-Z ]*$/;
@@ -42,10 +45,12 @@ function Contact(params) {
         setTextarea("WOW! looks good.");
         const feedColor = document.querySelector(".text-feed");
         feedColor.style.color = "green";
+        setIsValid(true);
       } else {
         setTextarea("* Minumum few words!! *");
         const feedColor = document.querySelector(".text-feed");
         feedColor.style.color = "red";
+        setIsValid(false);
       }
     }
     SetDetails((prevDetails) => ({
@@ -61,6 +66,7 @@ function Contact(params) {
     // window.location.href =
     //   "mailto:enteryourmailid@gamil.com?name=" + name + "&textarea=" + textarea;
     e.preventDefault();
+    if(!isValid) return alert("please check your input feild!!")
    try {
     axios.post("https://portfolio-feedback.onrender.com/api/feedbacks/",details)
    } catch (error) {
