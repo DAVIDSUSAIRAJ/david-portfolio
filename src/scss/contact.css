@@ -12,6 +12,9 @@
 
 
 
+.contactFull{
+  background-color: var(--contactbgColor);
+}
 /* Base Styles */
 .contactp {
   width: 100vw;
@@ -19,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--contactbgColor);
 }
 
 .contactp-card {
@@ -47,7 +51,7 @@
 
 .contactp-card1 .name,
 .contactp-card1 .feedback {
-  font-size: 14px;
+  font-size: 15px;
   padding: 7px 0px;
   color: var(--contactColor);
   display: inline-block;
@@ -63,7 +67,7 @@
   opacity: var(--contactImageOpacity);
   padding: 10px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 14px;
   transition: all 0.3s ease-in;
 }
 input::placeholder,
@@ -81,7 +85,7 @@ textarea::placeholder {
 }
 
 .contactp-card1 .contact-send-btn {
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -99,7 +103,7 @@ textarea::placeholder {
 
 .contactp-card1 .name-feed,
 .contactp-card1 .text-feed {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .contactp-card1 .text-feed {
@@ -143,7 +147,7 @@ textarea::placeholder {
   }
 
   .contactp-card1--form h4 {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 10px;
   }
@@ -184,14 +188,14 @@ textarea::placeholder {
 
   .contactp-card1--form h4 {
     /* color: green; */
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 10px;
   }
 
   .contactp-card1--form .name,
   .contactp-card1--form .feedback {
-    font-size: 12px;
+    font-size: 13px;
     padding: 2px 0px;
     /* color: gray; */
     display: inline-block;
@@ -201,7 +205,7 @@ textarea::placeholder {
   .contactp-card1--form .textareaInput {
     width: 100%;
     padding: 2px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .contactp-card1--form .textareaInput {
@@ -209,13 +213,13 @@ textarea::placeholder {
   }
 
   .contactp-card1--form .contact-send-btn {
-    font-size: 12px;
+    font-size: 13px;
     padding: 5px;
   }
 
   .contactp-card1--form .name-feed,
   .contactp-card1--form .text-feed {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .contactp-card1--img {
@@ -254,7 +258,7 @@ textarea::placeholder {
   }
 
   .contactp-card1--form h4 {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 10px;
   }
@@ -296,7 +300,7 @@ textarea::placeholder {
   }
 
   .contactp-card1--form h4 {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 10px;
   }

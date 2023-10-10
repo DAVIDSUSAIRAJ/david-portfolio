@@ -84,7 +84,7 @@ function Contact(params) {
 
   // END COTACT AUTO FOCUS
   return (
-    <div>
+    <div className="contactFull">
       <div className="contactp">
         <div className="contactp-card">
           <div className="contactp-card1">
