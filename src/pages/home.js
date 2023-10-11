@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import hero from "../images/web-design-illustration.png";
 import fly from "../images/flying-birds.png";
 import Hero from "../images/Home.png";
@@ -10,6 +11,14 @@ import FullStackImg from "../images/fullStack.webp";
 import "../scss/home.css";
 function Home(params) {
   const [readmore, setReadmore] = useState(false);
+  const [text] = useTypewriter({
+    words: ["MERN Stack Developer."],
+    loop: {},
+    typeSpeed: 70,
+    deleteSpeed: 70,
+    delaySpeed: 1000,
+  });
+
   const readMore = () => {
     setReadmore(!readmore);
   };
@@ -27,32 +36,50 @@ function Home(params) {
         </div>
 
         <div className="home--content">
-          <h4 className="intro">Hi ! I'm David Susairaj.</h4>
-          <h2 style={{ marginTop: "5px" }}>MERN Stack Developer</h2>
+          <h4 className="intro">Hi! I'm David Susairaj.</h4>
+          <h2 style={{ marginTop: "5px" }}>
+            <span style={{ width: "190px", display: "inline-block",color:"rgb(128 5 251)" }}>
+              {text}
+            </span>
+  
+          </h2>
           <div className="socialMedia">
             <div className="socialMedia_icons">
               <div>
                 {" "}
-                <img src={Github} width={27} height={27}  loading="eager"></img>
+                <img src={Github} width={27} height={27} loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Linkedin} width={32} height={32}  loading="eager"></img>
+                <img
+                  src={Linkedin}
+                  width={32}
+                  height={32}
+                  loading="eager"
+                ></img>
               </div>
               <div>
                 {" "}
-                <img src={Mail} width={27} height={27}  loading="eager"></img>
+                <img src={Mail} width={27} height={27} loading="eager"></img>
               </div>
               <div>
                 {" "}
-                <img src={Whatsapp} width={28} height={28}  loading="eager"></img>
+                <img
+                  src={Whatsapp}
+                  width={28}
+                  height={28}
+                  loading="eager"
+                ></img>
               </div>
             </div>
             <div className="socialMedia_urls">
               <div className="github_url_div">
                 {" "}
-                <a href="https://github.com/DAVIDSUSAIRAJ" target="_blank" >
-                  <span className="github_url"> https://github.com/DAVIDSUSAIRAJ</span>
+                <a href="https://github.com/DAVIDSUSAIRAJ" target="_blank">
+                  <span className="github_url">
+                    {" "}
+                    https://github.com/DAVIDSUSAIRAJ
+                  </span>
                 </a>
               </div>
               <div className="linkedin_url_div">
@@ -61,10 +88,13 @@ function Home(params) {
                   href="https://www.linkedin.com/in/davidsusairaj"
                   target="_blank"
                 >
-                  <span className="linkedin_url"> https://www.linkedin.com/in/davidsusairaj</span>
+                  <span className="linkedin_url">
+                    {" "}
+                    https://www.linkedin.com/in/davidsusairaj
+                  </span>
                 </a>
               </div>
-              <div  className="mail_url_div">
+              <div className="mail_url_div">
                 {" "}
                 <a href="mailto:davidsusairaj1996@gmail.com" target="_blank">
                   <span className="mail_url">davidsusairaj1996@gmail.com</span>
