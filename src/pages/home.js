@@ -12,7 +12,7 @@ import "../scss/home.css";
 function Home(params) {
   const [readmore, setReadmore] = useState(false);
   const [text] = useTypewriter({
-    words: ["MERN Stack Developer."],
+    words: ["MERN STACK DEVELOPER"],
     loop: {},
     typeSpeed: 70,
     deleteSpeed: 70,
@@ -36,9 +36,9 @@ function Home(params) {
         </div>
 
         <div className="home--content">
-          <h4 className="intro">Hi! I'm David Susairaj.</h4>
+          <h4 className="intro">Hi! I'm David Susairaj</h4>
           <h2 style={{ marginTop: "5px" }}>
-            <span style={{ width: "190px", display: "inline-block",color:"rgb(128 5 251)" }}>
+            <span style={{ width: "250px", display: "inline-block",color:"rgb(128 5 251)",fontSize:"13px" }}>
               {text}
             </span>
   
