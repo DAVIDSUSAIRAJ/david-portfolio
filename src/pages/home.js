@@ -16,7 +16,7 @@ function Home(params) {
     loop: {},
     typeSpeed: 70,
     deleteSpeed: 70,
-    delaySpeed: 1000,
+    delaySpeed: 3000,
   });
 
   const readMore = () => {
