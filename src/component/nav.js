@@ -86,6 +86,15 @@ function Nav(props) {
                 CONTACT
               </NavLink>
             </li>
+            <li className="nav--menus--ul__li contact">
+              <NavLink
+                to="/resume"
+                onClick={closeSideDrawer}
+                className={(navData) => (navData.isActive ? "green" : "black")}
+              >
+                RESUME
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="nav-icons" onClick={menuClick}>
