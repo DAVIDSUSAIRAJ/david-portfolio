@@ -1,3 +1,21 @@
+:root {
+  /* --aboutcolor: rgb(68, 66, 66);
+  --aboutbgColor:white; */
+  --themeColor:rgb(128 5 251);
+  /* --aboutImageOpacity:1.0; */
+
+
+}
+.dark-theme {
+  /* --aboutcolor: #c5c5c5;
+  --aboutbgColor:rgb(31, 31, 31); */
+  --themeColor:rgb(128 5 251);
+  /* --aboutImageOpacity:0.8; */
+}
+
+
+
+
 .da-resume{
     /* background-color: red;
     width: 100%;
@@ -27,9 +45,18 @@
     align-items: center;
 }
 .da_body{
-    width: 70%;
+    width: 450px;
     height: 500px;
-    background-color: rgb(12, 79, 138); 
+    /* background-color: rgb(12, 79, 138);  */
+}
+.re_underline{
+  width: 450px;
+  height: 2px;
+  background-color: rgb(100, 100, 100);
+  margin-bottom: 4px;
+}
+.re_honorAndAwards, .re_experience,.re_education,.re_publishes{
+  margin-top: 10px;
 }
 .david-img{
     padding-top: 20px;
@@ -65,7 +92,7 @@
     opacity: var(--homeImageOpacity);
   }
   .re_socialMedia_urls .re_github_url,.re_linkedin_url,.re_mail_url,.re_whatsapp_url{
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 4px;
   }
   .re_socialMedia_urls .re_linkedin_url_div,.re_whatsapp_url_div{
@@ -95,6 +122,55 @@
     transform: translateX(-49px);
   }
   .re-skills_ul ul li {
-    font-size: 11px;
-    margin-top: 4px;
+    font-size: 12px;
+    margin-top: 8px;
   }
+  .re_about--content{
+  text-align: justify;
+  /* padding: 20px; */
+  }
+  .re_about--content {
+    width: 450px;
+    height: 340px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--aboutcolor);
+    padding-top: 20px;
+    /* background-color: red; */
+  }
+  .re_publish_ul li{
+   margin: 4px;
+  }
+  .re_publish_ul li span{
+    text-decoration: underline;
+    color: var(--themeColor);
+  }
+
+  /* .re_publishes--content {
+    width: 450px;
+    height: 400px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 1px; */
+    /* font-size: 17px; */
+    /* line-height: 20px; */
+    /* color: var(--publishesColor); */
+  /* } */
+
+  /* .re_publishes--content a{
+    color: var(--publishesAnchorTagColor);
+
+  }
+
+  .re_publishes--content {
+    color: var(--themeColor);
+  }
+  .re_webapp{
+    box-shadow: var(--publishesBoxShadow);
+    padding: 5px;
+    margin: 5px;
+    word-wrap: break-word;
+    } */
