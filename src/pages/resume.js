@@ -36,8 +36,8 @@ const Resume = () => {
                 {" "}
                 <img
                   src={Linkedin}
-                  width={25}
-                  height={25}
+                  width={24}
+                  height={24}
                   loading="eager"
                 ></img>
               </div>
@@ -93,6 +93,20 @@ const Resume = () => {
              </div>
              <div>
                 <h5 className="re_skills">SKILLS</h5>
+             </div>
+             <div className="borderdiv">.</div>
+             <div className="re-skills_ul">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT JS</li>
+                <li>NODE JS</li>
+                <li>EXPRESS JS</li>
+                <li>MONGO DB</li>
+                <li>METERIAL UI</li>
+                <li>BOOTSTRAP</li>
+              </ul>
              </div>
           </div>
           <div className="da_body">second</div>

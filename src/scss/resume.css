@@ -33,20 +33,20 @@
 }
 .david-img{
     padding-top: 20px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .re_socialMedia{
     width: 300px;
     height: 120px;
-    background-color: red;
+    /* background-color: red; */
     padding-left: 45px;
     display: flex;
   }
   .re_socialMedia_icons{
     width: 30px;
     height: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -76,11 +76,25 @@
   }
   .re_role{
     margin: 4px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .re_skills{
     /* margin: start; */
-    text-decoration: underline;
-    transform: translateX(-50px);
+    /* text-decoration: underline; */
+    margin-top: 8px;
+    transform: translateX(-73px);
+    /* background-color: yellow; */
   }
-  
+  .borderdiv{
+    width: 238px;
+    height: 1px;
+    transform: translateX(22px);
+    background-color: rgb(15, 15, 15);
+  }
+  .re-skills_ul{
+    transform: translateX(-49px);
+  }
+  .re-skills_ul ul li {
+    font-size: 11px;
+    margin-top: 4px;
+  }
