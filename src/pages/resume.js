@@ -12,16 +12,30 @@ import autoTable from "jspdf-autotable";
 const Resume = () => {
   let download = async () => {
     const GzCurveChartContainer = document.getElementById("davidresume");
+    const GzCurveChartContainerkk = document.getElementById("re_pdf_resume");
+  
     const doc = new jsPDF();
-    const canvas = await html2canvas(GzCurveChartContainer);
+  
+    const captureOptions = {
+      onclone: (docClone) => {
+        const targetElement = docClone.getElementById("re_pdf_resume");
+        if (targetElement) {
+          // Add the style to the cloned element within the captured document
+          targetElement.style.display = "block";
+        }
+      },
+    };
+  
+    const canvas = await html2canvas(GzCurveChartContainerkk, captureOptions);
     const imageData = canvas.toDataURL("image/png");
+  
     doc.addImage(imageData, "PNG", -45, 0, 300, 250);
     doc.save("GZ Curve.pdf");
   };
-
+  
   return (
-    <div className="resume">
-      <div className="re_header">
+    <div className="resume" id="pdfresume" >
+      <div className="re_header" id = "re_pdf_resume" style = {{display:"none"}}>
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
@@ -203,10 +217,11 @@ const Resume = () => {
           </div>
         </div>
 
-        <div style={{ margin: "auto", width: "100" }}>
+      </div>
+      
+      <div style={{ margin: "auto", width: "100", backgroundColor:"red",marginTop:"250px"}}>
           <button onClick={download}> Download</button>
         </div>
-      </div>
     </div>
   );
 };
