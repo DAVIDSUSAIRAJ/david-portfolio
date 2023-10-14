@@ -11,11 +11,9 @@ import autoTable from "jspdf-autotable";
 
 const Resume = () => {
   let download = async () => {
-    const GzCurveChartContainer = document.getElementById("davidresume");
-    const GzCurveChartContainerkk = document.getElementById("re_pdf_resume");
-  
+    const downloadResumeDom = document.getElementById("re_pdf_resume");
+
     const doc = new jsPDF();
-  
     const captureOptions = {
       onclone: (docClone) => {
         const targetElement = docClone.getElementById("re_pdf_resume");
@@ -25,27 +23,48 @@ const Resume = () => {
         }
       },
     };
-  
-    const canvas = await html2canvas(GzCurveChartContainerkk, captureOptions);
+
+    const canvas = await html2canvas(downloadResumeDom, captureOptions);
+
+    // Get the background color from the CSS class
+    const elementWithBgClass = document.querySelector(".re_body");
+    const computedStyle = getComputedStyle(elementWithBgClass);
+    const bgColor = computedStyle.backgroundColor;
+
+    // Extract RGB color values from the background color
+    const rgbValues = bgColor.match(/\d+/g);
+    const red = parseInt(rgbValues[0], 10);
+    const green = parseInt(rgbValues[1], 10);
+    const blue = parseInt(rgbValues[2], 10);
+
+    // Set the background color in the PDF
+    doc.setFillColor(red, green, blue);
+    doc.rect(
+      0,//start(for x co-ordinate)
+      0,//start(for y co-ordinate)
+      doc.internal.pageSize.width,//end(for y co-ordinate)
+      doc.internal.pageSize.height,//end(for y co-ordinate)
+      "F",//fill the color
+    ); // 'F' means fill
     const imageData = canvas.toDataURL("image/png");
-  
-    doc.addImage(imageData, "PNG", -45, 0, 300, 250);
+
+    doc.addImage(imageData, "PNG", -45, 0, 300, 200);
     doc.save("GZ Curve.pdf");
   };
-  
+
   return (
-    <div className="resume" id="pdfresume" >
-      <div className="re_header" id = "re_pdf_resume" style = {{display:"none"}}>
+    <div className="resume" id="pdfresume">
+      <div className="re_header" id="re_pdf_resume">
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
               <img className="david-img" width="200px" src={davidimg}></img>
             </div>
             <div className="re_name">
-              <h3>David susairaj</h3>
+              <span className="resumeName">David susairaj</span>
             </div>
             <div className="re_role">
-              <h6>MERN STACK DEVELOPER</h6>
+              <span className="resumeRole">MERN STACK DEVELOPER</span>
             </div>
             <div className="re_socialMedia">
               <div className="re_socialMedia_icons">
@@ -119,8 +138,8 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <h5 className="re_skills">SKILLS</h5>
+            <div className="re_skills_div">
+              <span >SKILLS</span>
             </div>
             <div className="borderdiv">.</div>
             <div className="re-skills_ul">
@@ -181,47 +200,83 @@ const Resume = () => {
                 <strong>PUBLISHES:</strong>
               </h4>
               <div className="re_underline">.</div>
-              <ul className = "re_publish_ul">
+              <ul className="re_publish_ul">
                 <li>
                   <strong>Learning of Journey Application:</strong>
                   <br></br>
-                  <span>https://davidsusairaj.github.io/Web-first-Design/</span>
+                  <a
+                    href="https://davidsusairaj.github.io/Web-first-Design/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/Web-first-Design/
+                  </a>
                 </li>
                 <li>
                   <strong>RoadmapMaster Application:</strong>
                   <br></br>
-                  <span>https://davidsusairaj.github.io/web-design-react/</span>
+                  <a
+                    href="https://davidsusairaj.github.io/web-design-react/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/web-design-react/
+                  </a>
                 </li>
                 <li>
                   <strong>Quiz Application:</strong>
                   <br></br>
-                  <span>https://davidsusairaj.github.io/quiz-react-app/</span>
+                  <a
+                    href="https://davidsusairaj.github.io/quiz-react-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/quiz-react-app/
+                  </a>
                 </li>
                 <li>
                   <strong>Counter Application:</strong>
                   <br></br>
-                  <span>https://davidsusairaj.github.io/redux-counter-app/</span>
+                  <a
+                    href=" https://davidsusairaj.github.io/redux-counter-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/redux-counter-app/
+                  </a>
                 </li>
                 <li>
                   <strong>Todo Application:</strong>
                   <br></br>
-                  <span>https://davidsusairaj.github.io/todo-react-app</span>
+                  <a
+                    href="https://davidsusairaj.github.io/todo-react-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/todo-react-app/
+                  </a>
                 </li>
                 <li>
                   <strong>Stopwatch Application:</strong>
                   <br></br>
-                  <span>https://davidsusairaj.github.io/stopwatch-react-app/</span>
+                  <a
+                    href="https://davidsusairaj.github.io/stopwatch-react-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/stopwatch-react-app/
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
-      
-      <div style={{ margin: "auto", width: "100", backgroundColor:"red",marginTop:"250px"}}>
-          <button onClick={download}> Download</button>
-        </div>
+
+      <div
+        style={{
+          margin: "auto",
+          width: "100",
+          backgroundColor: "red",
+          marginTop: "250px",
+        }}
+      >
+        <button onClick={download}> Download</button>
+      </div>
     </div>
   );
 };

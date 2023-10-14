@@ -1,31 +1,51 @@
 :root {
-  /* --aboutcolor: rgb(68, 66, 66);
-  --aboutbgColor:white; */
+   --resumecolor: rgb(68, 66, 66);
+   /* --resumecolor:rgb(245, 11, 11); */
+  --resumebgColor:white; 
   --themeColor:rgb(128 5 251);
-  /* --aboutImageOpacity:1.0; */
-
+  --resumeAnchorTagColor: rgb(128 5 251);
+  --resumeUnderline:rgb(100, 100, 100);
 
 }
 .dark-theme {
-  /* --aboutcolor: #c5c5c5;
-  --aboutbgColor:rgb(31, 31, 31); */
-  --themeColor:rgb(128 5 251);
-  /* --aboutImageOpacity:0.8; */
+
+   --resumecolor: #c5c5c5;
+   --resumebgColor:rgb(31, 31, 31); 
+  --themeColor:rgb(128 5 251); 
+  --resumeAnchorTagColor: #58a6ff;
+  --resumeUnderline:rgb(100, 100, 100);
 }
 
 
 
 
-.da-resume{
-    /* background-color: red;
-    width: 100%;
+.re_body{
+  color: var(--resumecolor);
+  /* color: var(--resumebgColor); */
+     background-color: var(--resumebgColor);
+   /* width: 100%;
     height: 900px; */
     /* height: auto; */
 }
+.resumeName{
+  /* color: var(--resumecolor); */
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+}
+.resumeRole{
+  /* color: var(--resumecolor); */
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 .re_header{
+  /* color: var(--resumecolor); */
     /* background-color: red; */
     width: 100%;
-    height: 900px;
+    height: auto;
 }
 .re_body{
     padding: 10vh;
@@ -52,7 +72,7 @@
 .re_underline{
   width: 450px;
   height: 2px;
-  background-color: rgb(100, 100, 100);
+  background-color: var(--resumeUnderline) ;
   margin-bottom: 4px;
 }
 .re_honorAndAwards, .re_experience,.re_education,.re_publishes{
@@ -86,9 +106,10 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+
   .re_socialMedia_urls a{
-    color: var(--homeAnchorTagColor) ;
-    opacity: var(--homeImageOpacity);
+    color: var(--resumeAnchorTagColor) ;
   }
   .re_socialMedia_urls .re_github_url,.re_linkedin_url,.re_mail_url,.re_whatsapp_url{
   font-size: 12px;
@@ -104,18 +125,19 @@
     margin: 4px;
     /* background-color: aqua; */
   }
-  .re_skills{
-    /* margin: start; */
-    /* text-decoration: underline; */
+  .re_skills_div{
+    transform: translateX(-68px);
     margin-top: 8px;
-    transform: translateX(-73px);
-    /* background-color: yellow; */
+  }
+  .re_skills_div span{
+    color: var(--resumecolor);;
+    font-weight: bold;
   }
   .borderdiv{
     width: 238px;
-    height: 1px;
+    height: 2px;
     transform: translateX(22px);
-    background-color: rgb(15, 15, 15);
+    background-color: var(--resumeUnderline);
   }
   .re-skills_ul{
     transform: translateX(-49px);
@@ -123,6 +145,8 @@
   .re-skills_ul ul li {
     font-size: 12px;
     margin-top: 8px;
+    list-style-type: square;
+    list-style-position: outside;
   }
   .re_about--content{
   text-align: justify;
@@ -136,40 +160,22 @@
     word-spacing: 1px;
     font-size: 12px;
     line-height: 18px;
-    color: var(--aboutcolor);
+    /* color: var(--resumecolor); */
+    /* color: black; */
     padding-top: 20px;
     /* background-color: red; */
   }
+  /* .re_publish_ul {
+    background-color: red;
+    height: 300px;
+  } */
   .re_publish_ul li{
    margin: 4px;
-  }
-  .re_publish_ul li span{
-    text-decoration: underline;
-    color: var(--themeColor);
+   list-style-type: square;
+   list-style-position: outside;
   }
 
-  /* .re_publishes--content {
-    width: 450px;
-    height: 400px;
-    text-align: justify;
-    letter-spacing: 1px;
-    word-spacing: 1px; */
-    /* font-size: 17px; */
-    /* line-height: 20px; */
-    /* color: var(--publishesColor); */
-  /* } */
-
-  /* .re_publishes--content a{
-    color: var(--publishesAnchorTagColor);
-
+  .re_publish_ul li a {
+    font-size: 12px;
+    color: var(--resumeAnchorTagColor);
   }
-
-  .re_publishes--content {
-    color: var(--themeColor);
-  }
-  .re_webapp{
-    box-shadow: var(--publishesBoxShadow);
-    padding: 5px;
-    margin: 5px;
-    word-wrap: break-word;
-    } */
