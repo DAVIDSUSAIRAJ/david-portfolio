@@ -165,14 +165,16 @@
     padding-top: 20px;
     /* background-color: red; */
   }
-  /* .re_publish_ul {
-    background-color: red;
-    height: 300px;
-  } */
+  .re_publish_ul {
+    /* background-color: red; */
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
   .re_publish_ul li{
    margin: 4px;
-   list-style-type: square;
-   list-style-position: outside;
   }
 
   .re_publish_ul li a {

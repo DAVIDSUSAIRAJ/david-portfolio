@@ -200,8 +200,8 @@ const Resume = () => {
                 <strong>PUBLISHES:</strong>
               </h4>
               <div className="re_underline">.</div>
-              <ul className="re_publish_ul">
-                <li>
+              <div className="re_publish_ul">
+                <div>
                   <strong>Learning of Journey Application:</strong>
                   <br></br>
                   <a
@@ -210,8 +210,8 @@ const Resume = () => {
                   >
                     https://davidsusairaj.github.io/Web-first-Design/
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <strong>RoadmapMaster Application:</strong>
                   <br></br>
                   <a
@@ -220,8 +220,8 @@ const Resume = () => {
                   >
                     https://davidsusairaj.github.io/web-design-react/
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <strong>Quiz Application:</strong>
                   <br></br>
                   <a
@@ -230,8 +230,8 @@ const Resume = () => {
                   >
                     https://davidsusairaj.github.io/quiz-react-app/
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <strong>Counter Application:</strong>
                   <br></br>
                   <a
@@ -240,8 +240,8 @@ const Resume = () => {
                   >
                     https://davidsusairaj.github.io/redux-counter-app/
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <strong>Todo Application:</strong>
                   <br></br>
                   <a
@@ -250,8 +250,8 @@ const Resume = () => {
                   >
                     https://davidsusairaj.github.io/todo-react-app/
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <strong>Stopwatch Application:</strong>
                   <br></br>
                   <a
@@ -260,8 +260,8 @@ const Resume = () => {
                   >
                     https://davidsusairaj.github.io/stopwatch-react-app/
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
