@@ -15,6 +15,7 @@ import jsPDF from "jspdf";
 import "jspdf-autotable";
 import autoTable from "jspdf-autotable";
 import "../scss/home.css";
+import davidimg from "../images/david.png";
 function Home(params) {
   const [readmore, setReadmore] = useState(false);
   const [text] = useTypewriter({
@@ -28,7 +29,47 @@ function Home(params) {
   const readMore = () => {
     setReadmore(!readmore);
   };
-  const download = async () => {
+  const mobileDownload= async () => {
+    const downloadResumeDom = document.getElementById("re_pdf_resume");
+  
+    const doc = new jsPDF();
+  
+    // Get the background color from the CSS class
+    const elementWithBgClass = document.querySelector(".re_body");
+    const computedStyle = getComputedStyle(elementWithBgClass);
+    const bgColor = computedStyle.backgroundColor;
+  
+    // Extract RGB color values from the background color
+    const rgbValues = bgColor.match(/\d+/g);
+    const red = parseInt(rgbValues[0], 10);
+    const green = parseInt(rgbValues[1], 10);
+    const blue = parseInt(rgbValues[2], 10);
+  
+    // Set the background color in the PDF
+    doc.setFillColor(red, green, blue);
+    doc.rect(
+      0, //start(for x co-ordinate)
+      0, //start(for y co-ordinate)
+      doc.internal.pageSize.width, //end(for y co-ordinate)
+      doc.internal.pageSize.height, //end(for y co-ordinate)
+      "F" //fill the color
+    ); // 'F' means fill
+    // const imageData = canvas.toDataURL("image/png");
+  
+    doc.addImage(davidimg, "PNG", 30, 30, 40, 40);
+    doc.setFontSize(18);
+    doc.text("Hi ! I'm' David Susairaj", 80, 12);
+    doc.line(10, 55, 280, 55);
+
+
+
+
+
+
+
+    doc.save("David_CV.pdf");
+  };
+   const download = async () => {
     const downloadResumeDom = document.getElementById("re_pdf_resume");
   
     const doc = new jsPDF();
