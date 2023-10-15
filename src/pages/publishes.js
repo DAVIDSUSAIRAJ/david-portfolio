@@ -16,6 +16,40 @@ function Publishes(params) {
         <div className="publishes--content">
           <div>
             <div className="webapp">
+              <h5>Quiz Application:</h5>
+              <h6>Technology: html5,sass and reactjs</h6>
+              <span
+                style={{
+                  fontSize: "12px",
+                  color: "#0000ee",
+                }}
+              >
+                <a
+                  href="https://davidsusairaj.github.io/quiz-react-app/"
+                  target="_blank"
+                >
+                  https://davidsusairaj.github.io/quiz-react-app/
+                </a>
+              </span>
+            </div>
+            <div className="webapp">
+              <h5>Todo Application:</h5>
+              <h6>Technology: html5,sass and reactjs</h6>
+              <span
+                style={{
+                  fontSize: "12px",
+                  color: "#0000ee",
+                }}
+              >
+                <a
+                  href="https://davidsusairaj.github.io/todo-react-app"
+                  target="_blank"
+                >
+                  https://davidsusairaj.github.io/todo-react-app
+                </a>
+              </span>
+            </div>
+            <div className="webapp">
               {" "}
               <h5>Learning of Journey Application:</h5>
               <h6>Technology: html5,sass and js</h6>
@@ -52,24 +86,6 @@ function Publishes(params) {
             </div>
 
             <div className="webapp">
-              <h5>Quiz Application:</h5>
-              <h6>Technology: html5,sass and reactjs</h6>
-              <span
-                style={{
-                  fontSize: "12px",
-                  color: "#0000ee",
-                }}
-              >
-                <a
-                  href="https://davidsusairaj.github.io/quiz-react-app/"
-                  target="_blank"
-                >
-                  https://davidsusairaj.github.io/quiz-react-app/
-                </a>
-              </span>
-            </div>
-
-            <div className="webapp">
               <h5>Counter Application:</h5>
               <h6>Technology: html5,sass,reactjs and redux</h6>
               <span
@@ -87,23 +103,6 @@ function Publishes(params) {
               </span>
             </div>
 
-            <div className="webapp">
-              <h5>Todo Application:</h5>
-              <h6>Technology: html5,sass and reactjs</h6>
-              <span
-                style={{
-                  fontSize: "12px",
-                  color: "#0000ee",
-                }}
-              >
-                <a
-                  href="https://davidsusairaj.github.io/todo-react-app"
-                  target="_blank"
-                >
-                  https://davidsusairaj.github.io/todo-react-app
-                </a>
-              </span>
-            </div>
             <div className="webapp">
               <h5>Stopwatch Application:</h5>
               <h6>Technology: html5,sass and reactjs</h6>

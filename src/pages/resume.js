@@ -48,15 +48,13 @@ export const download = async () => {
   const imageData = canvas.toDataURL("image/png");
 
   doc.addImage(imageData, "PNG", -45, 0, 300, 200);
-  doc.save("David_CV.pdf");
+  doc.save("Davidsusairaj_CV.pdf");
 };
 
 const Resume = () => {
-
-
   return (
     <div className="resume" id="pdfresume">
-      <div className="re_header" id="re_pdf_resume" style={{display:"none"}}>
+      <div className="re_header" id="re_pdf_resume" style={{ display: "none" }}>
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
@@ -145,7 +143,7 @@ const Resume = () => {
             </div>
             <div className="borderdiv">.</div>
             <div className="re_frontend_div">
-            <span>FRONTEND:</span>
+              <span>FRONTEND:</span>
             </div>
             <div className="re-skills_ul">
               <ul>
@@ -164,7 +162,7 @@ const Resume = () => {
               </ul>
             </div>
             <div className="re_backend_div">
-            <span>BACKEND:</span>
+              <span>BACKEND:</span>
             </div>
             <div className="re-backend_skills_ul">
               <ul>
@@ -220,6 +218,61 @@ const Resume = () => {
               <div className="re_underline">.</div>
               <div className="re_publish_ul">
                 <div>
+                  <strong>Portfolio Application:</strong>
+
+                  <br></br>
+                  <span>
+                    Technology: html5,css,react js,express js, mongodb
+                  </span>
+                  <br></br>
+
+                  <a
+                    href="https://david-portfolio-two.vercel.app/"
+                    target="_blank"
+                  >
+                    https://david-portfolio-two.vercel.app/
+                  </a>
+                </div>
+                <div>
+                  <strong>Quiz Application:</strong>
+
+                  <br></br>
+                  <span>Technology: html5,sass and react js</span>
+                  <br></br>
+                  <a
+                    href="https://davidsusairaj.github.io/quiz-react-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/quiz-react-app/
+                  </a>
+                </div>
+                <div>
+                  <strong>Todo Application:</strong>
+                  <br></br>
+                  <span>Technology: html5,sass and react js</span>
+                  <br></br>
+                  <a
+                    href="https://davidsusairaj.github.io/todo-react-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/todo-react-app/
+                  </a>
+                </div>
+
+                <div>
+                  <strong>RoadmapMaster Application:</strong>
+
+                  <br></br>
+                  <span>Technology: html5,sass and react js</span>
+                  <br></br>
+                  <a
+                    href="https://davidsusairaj.github.io/web-design-react/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/web-design-react/
+                  </a>
+                </div>
+                <div>
                   <strong>Learning of Journey Application:</strong>
 
                   <br></br>
@@ -234,60 +287,9 @@ const Resume = () => {
                   </a>
                 </div>
                 <div>
-                  <strong>RoadmapMaster Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass and js</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/web-design-react/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/web-design-react/
-                  </a>
-                </div>
-                <div>
-                  <strong>Quiz Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass and js</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/quiz-react-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/quiz-react-app/
-                  </a>
-                </div>
-                <div>
-                  <strong>Counter Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass and js</span>
-                  <br></br>
-                  <a
-                    href=" https://davidsusairaj.github.io/redux-counter-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/redux-counter-app/
-                  </a>
-                </div>
-                <div>
-                  <strong>Todo Application:</strong>
-                  <br></br>
-                  <span>Technology: html5,sass and js</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/todo-react-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/todo-react-app/
-                  </a>
-                </div>
-                <div>
                   <strong>Stopwatch Application:</strong>
                   <br></br>
-                  <span>Technology: html5,sass and js</span>
+                  <span>Technology: html5,sass and reactjs</span>
                   <br></br>
                   <a
                     href="https://davidsusairaj.github.io/stopwatch-react-app/"
@@ -296,12 +298,26 @@ const Resume = () => {
                     https://davidsusairaj.github.io/stopwatch-react-app/
                   </a>
                 </div>
+
+                <div>
+                  <strong>Counter Application:</strong>
+
+                  <br></br>
+                  <span>Technology: html5,sass,react js and redux</span>
+                  <br></br>
+                  <a
+                    href=" https://davidsusairaj.github.io/redux-counter-app/"
+                    target="_blank"
+                  >
+                    https://davidsusairaj.github.io/redux-counter-app/
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-{/* 
+      {/* 
       <div
         style={{
           margin: "auto",
