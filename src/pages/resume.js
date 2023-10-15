@@ -40,11 +40,11 @@ const Resume = () => {
     // Set the background color in the PDF
     doc.setFillColor(red, green, blue);
     doc.rect(
-      0,//start(for x co-ordinate)
-      0,//start(for y co-ordinate)
-      doc.internal.pageSize.width,//end(for y co-ordinate)
-      doc.internal.pageSize.height,//end(for y co-ordinate)
-      "F",//fill the color
+      0, //start(for x co-ordinate)
+      0, //start(for y co-ordinate)
+      doc.internal.pageSize.width, //end(for y co-ordinate)
+      doc.internal.pageSize.height, //end(for y co-ordinate)
+      "F" //fill the color
     ); // 'F' means fill
     const imageData = canvas.toDataURL("image/png");
 
@@ -139,20 +139,36 @@ const Resume = () => {
               </div>
             </div>
             <div className="re_skills_div">
-              <span >SKILLS</span>
+              <span>SKILLS</span>
             </div>
             <div className="borderdiv">.</div>
+            <div className="re_frontend_div">
+            <span>FRONTEND:</span>
+            </div>
             <div className="re-skills_ul">
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
                 <li>JAVASCRIPT</li>
                 <li>REACT JS</li>
-                <li>NODE JS</li>
-                <li>EXPRESS JS</li>
-                <li>MONGO DB</li>
+                <li>REDUX</li>
+                <li>TYPESCRIPT</li>
+                <li>GIT</li>
+                <li>GITHUB</li>
+                <li> AZURE DEVOPS</li>
+                <li>SASS</li>
                 <li>METERIAL UI</li>
                 <li>BOOTSTRAP</li>
+              </ul>
+            </div>
+            <div className="re_backend_div">
+            <span>BACKEND:</span>
+            </div>
+            <div className="re-backend_skills_ul">
+              <ul>
+                <li>NODE JS</li>
+                <li>EXPRESS JS</li>
+                <li>MONGODB</li>
               </ul>
             </div>
           </div>
@@ -203,7 +219,11 @@ const Resume = () => {
               <div className="re_publish_ul">
                 <div>
                   <strong>Learning of Journey Application:</strong>
+
                   <br></br>
+                  <span>Technology: html5,sass and js</span>
+                  <br></br>
+
                   <a
                     href="https://davidsusairaj.github.io/Web-first-Design/"
                     target="_blank"
@@ -213,6 +233,9 @@ const Resume = () => {
                 </div>
                 <div>
                   <strong>RoadmapMaster Application:</strong>
+
+                  <br></br>
+                  <span>Technology: html5,sass and js</span>
                   <br></br>
                   <a
                     href="https://davidsusairaj.github.io/web-design-react/"
@@ -223,6 +246,9 @@ const Resume = () => {
                 </div>
                 <div>
                   <strong>Quiz Application:</strong>
+
+                  <br></br>
+                  <span>Technology: html5,sass and js</span>
                   <br></br>
                   <a
                     href="https://davidsusairaj.github.io/quiz-react-app/"
@@ -233,6 +259,9 @@ const Resume = () => {
                 </div>
                 <div>
                   <strong>Counter Application:</strong>
+
+                  <br></br>
+                  <span>Technology: html5,sass and js</span>
                   <br></br>
                   <a
                     href=" https://davidsusairaj.github.io/redux-counter-app/"
@@ -244,6 +273,8 @@ const Resume = () => {
                 <div>
                   <strong>Todo Application:</strong>
                   <br></br>
+                  <span>Technology: html5,sass and js</span>
+                  <br></br>
                   <a
                     href="https://davidsusairaj.github.io/todo-react-app/"
                     target="_blank"
@@ -253,6 +284,8 @@ const Resume = () => {
                 </div>
                 <div>
                   <strong>Stopwatch Application:</strong>
+                  <br></br>
+                  <span>Technology: html5,sass and js</span>
                   <br></br>
                   <a
                     href="https://davidsusairaj.github.io/stopwatch-react-app/"
