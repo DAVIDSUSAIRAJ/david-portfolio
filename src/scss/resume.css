@@ -125,32 +125,32 @@
   margin-left: 4px;
   }
   .re_socialMedia_urls .re_linkedin_url_div{
-    transform: translateY(-4px);
+    transform: translateY(-2px);
   }
   
   .re_whatapp_url_div {
-    transform: translateY(4px);
+    transform: translateY(6px);
     /* background-color: red;
     color: red; */
   }
   .re_socialMedia_urls .re_github_url_div{
-    transform: translateY(-12px);
+    transform: translateY(-7px);
   }
   .re_role{
     margin: 4px;
     /* background-color: aqua; */
   }
   .re_skills_div{
-    transform: translateX(-85px);
+    transform: translateX(-94px);
     margin-top: 8px;
   }
   .re_frontend_div{
-    transform: translateX(-68px);
+    transform: translateX(-78px);
     font-size: 15px;
     margin-top: 8px;
   }
   .re_backend_div {
-    transform: translateX(-71px);
+    transform: translateX(-78px);
     font-size: 15px;
     margin-top: 8px;
   }
@@ -169,7 +169,7 @@
   .borderdiv{
     width: 324px;
     height: 2px;
-    transform: translateX(48px);
+    transform: translateX(40px);
     background-color: var(--resumeUnderline);
   }
   .re-skills_ul{

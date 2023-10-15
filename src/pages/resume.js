@@ -54,7 +54,7 @@ export const download = async () => {
 const Resume = () => {
   return (
     <div className="resume" id="pdfresume">
-      <div className="re_header" id="re_pdf_resume" style={{ display: "block" }}>
+      <div className="re_header" id="re_pdf_resume" style={{ display: "none" }}>
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
