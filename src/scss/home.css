@@ -174,6 +174,9 @@ margin-left: 4px;
   .socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url{
     font-size: 14px;
     }
+    .download_resume_div{
+      transform: translateX(125px);
+    }
   
 
 
@@ -218,7 +221,9 @@ margin-left: 4px;
       word-spacing: 2px;
       transform: translateY(-30%);
     }
-  
+    .download_resume_div{
+      transform: translateX(125px);
+    }
   
   }
 
@@ -263,6 +268,9 @@ margin-left: 4px;
     width: 250px;
     height: 200px;
     transform: translateX(-2%);
+  }
+  .download_resume_div{
+    transform: translateX(125px);
   }
 }
 

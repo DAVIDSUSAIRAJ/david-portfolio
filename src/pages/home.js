@@ -67,7 +67,7 @@ function Home(params) {
     const imageData = canvas.toDataURL("image/png");
   
     doc.addImage(imageData, "PNG", -45, 0, 300, 200);
-    doc.save("GZ Curve.pdf");
+    doc.save("David_CV.pdf");
   };
   return (
     <div>
