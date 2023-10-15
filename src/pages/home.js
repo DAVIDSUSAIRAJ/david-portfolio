@@ -107,7 +107,7 @@ function Home(params) {
     ); // 'F' means fill
     const imageData = canvas.toDataURL("image/png");
   
-    doc.addImage(imageData, "PNG", -45, 0, 300, 200);
+    doc.addImage(imageData, "PNG", -55, 0, 300, 300);
     doc.save("David_CV.pdf");
   };
   return (

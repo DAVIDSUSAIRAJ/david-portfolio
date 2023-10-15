@@ -54,7 +54,7 @@ export const download = async () => {
 const Resume = () => {
   return (
     <div className="resume" id="pdfresume">
-      <div className="re_header" id="re_pdf_resume" style={{ display: "none" }}>
+      <div className="re_header" id="re_pdf_resume" style={{ display: "block" }}>
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
@@ -72,8 +72,8 @@ const Resume = () => {
                   {" "}
                   <img
                     src={Github}
-                    width={20}
-                    height={20}
+                    width={28}
+                    height={28}
                     loading="eager"
                   ></img>
                 </div>
@@ -81,21 +81,21 @@ const Resume = () => {
                   {" "}
                   <img
                     src={Linkedin}
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                     loading="eager"
                   ></img>
                 </div>
                 <div>
                   {" "}
-                  <img src={Mail} width={20} height={20} loading="eager"></img>
+                  <img src={Mail} width={28} height={28} loading="eager"></img>
                 </div>
                 <div>
                   {" "}
                   <img
                     src={Whatsapp}
-                    width={20}
-                    height={20}
+                    width={28}
+                    height={28}
                     loading="eager"
                   ></img>
                 </div>

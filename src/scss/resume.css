@@ -26,16 +26,17 @@
    /* width: 100%;
     height: 900px; */
     /* height: auto; */
+
 }
 .resumeName{
   /* color: var(--resumecolor); */
-  font-size: 19px;
+  font-size: 21px;
   font-weight: bold;
   text-align: center;
 }
 .resumeRole{
   /* color: var(--resumecolor); */
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
@@ -45,20 +46,20 @@
   /* color: var(--resumecolor); */
     /* background-color: red; */
     width:1260px;
-    height: 1000px;
+    height: 1200px;
 }
 .re_body{
     padding: 100px;
     /* background-color:blue; */
     width: 1260px;
-    height: 1000px;
+    height: 1200px;
     display: flex;
     justify-content: center;
 }
 .da_head{
-    width: 320px;
+    width: 430px;
     /* background-color: rgb(8, 199, 164); */
-    height: 900px;
+    height: 1000px;
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
@@ -66,7 +67,7 @@
 }
 .da_body{
     width: 450px;
-    height: 900px;
+    height: 1000px;
     /* background-color: rgb(12, 79, 138);  */
 }
 .re_underline{
@@ -83,15 +84,18 @@
 }
 
 .re_socialMedia{
-    width: 300px;
-    height: 120px;
+    width: 400px;
+    height: 140px;
     /* background-color: red; */
-    padding-left: 45px;
+    transform: translateX(35px);
+    /* padding-left: 35px; */
+    margin-top: 8px;
+    margin-bottom: 5px;
     display: flex;
   }
   .re_socialMedia_icons{
-    width: 30px;
-    height: 100%;
+    width: 250px;
+    height: 140px;
     /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
@@ -100,44 +104,54 @@
   
   }
   .re_socialMedia_urls{
-    width: auto;
-    height: 100%;
+    /* width: 40px; */
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     /* background-color: yellow; */
+    transform: translateX(-32px);
   }
 
 
   .re_socialMedia_urls a{
-    color: var(--resumeAnchorTagColor) ;
+    color: var(--resumeAnchorTagColor);
+  }
+  .re_socialMedia_urls a span{
+    text-decoration: underline;
   }
   .re_socialMedia_urls .re_github_url,.re_linkedin_url,.re_mail_url,.re_whatsapp_url{
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 4px;
   }
-  .re_socialMedia_urls .re_linkedin_url_div,.re_whatsapp_url_div{
+  .re_socialMedia_urls .re_linkedin_url_div{
     transform: translateY(-4px);
   }
+  
+  .re_whatapp_url_div {
+    transform: translateY(4px);
+    /* background-color: red;
+    color: red; */
+  }
   .re_socialMedia_urls .re_github_url_div{
-    transform: translateY(-6px);
+    transform: translateY(-12px);
   }
   .re_role{
     margin: 4px;
     /* background-color: aqua; */
   }
   .re_skills_div{
-    transform: translateX(-68px);
+    transform: translateX(-85px);
     margin-top: 8px;
   }
   .re_frontend_div{
-    transform: translateX(-58px);
-    font-size: 13px;
+    transform: translateX(-68px);
+    font-size: 15px;
     margin-top: 8px;
   }
   .re_backend_div {
-    transform: translateX(-60px);
-    font-size: 13px;
+    transform: translateX(-71px);
+    font-size: 15px;
     margin-top: 8px;
   }
   .re_backend_div span{
@@ -153,26 +167,27 @@
     font-weight: bold;
   }
   .borderdiv{
-    width: 238px;
+    width: 324px;
     height: 2px;
-    transform: translateX(22px);
+    transform: translateX(48px);
     background-color: var(--resumeUnderline);
   }
   .re-skills_ul{
     transform: translateX(-39px);
+    /* background-color: red; */
   }
   .re-backend_skills_ul{
     transform: translateX(-49px);
   }
   .re-backend_skills_ul ul li {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 8px;
     /* list-style-type: square; */
      list-style-type: disc;
     list-style-position: inside;
   }
   .re-skills_ul ul li {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 8px;
     /* list-style-type: square; */
      list-style-type: disc;
@@ -188,7 +203,7 @@
     text-align: justify;
     letter-spacing: 1px;
     word-spacing: 1px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
     /* color: var(--resumecolor); */
     /* color: black; */
@@ -210,6 +225,8 @@
 
 
   .re_publish_ul div a {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--resumeAnchorTagColor);
+    text-decoration: underline;
   }
+
