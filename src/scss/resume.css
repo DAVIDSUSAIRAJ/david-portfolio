@@ -129,12 +129,12 @@
   }
   
   .re_whatapp_url_div {
-    transform: translateY(6px);
+    transform: translateY(3px);
     /* background-color: red;
     color: red; */
   }
   .re_socialMedia_urls .re_github_url_div{
-    transform: translateY(-7px);
+    transform: translateY(-3px);
   }
   .re_role{
     margin: 4px;
