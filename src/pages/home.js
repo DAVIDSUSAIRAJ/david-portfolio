@@ -8,6 +8,12 @@ import Mail from "../images/emailred.png";
 import Whatsapp from "../images/whatsapp.png";
 import Github from "../images/githubround.png";
 import FullStackImg from "../images/fullStack.webp";
+import Resume from "./resume";
+// import { download } from "./resume";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+import "jspdf-autotable";
+import autoTable from "jspdf-autotable";
 import "../scss/home.css";
 function Home(params) {
   const [readmore, setReadmore] = useState(false);
@@ -21,6 +27,47 @@ function Home(params) {
 
   const readMore = () => {
     setReadmore(!readmore);
+  };
+  const download = async () => {
+    const downloadResumeDom = document.getElementById("re_pdf_resume");
+  
+    const doc = new jsPDF();
+    const captureOptions = {
+      onclone: (docClone) => {
+        const targetElement = docClone.getElementById("re_pdf_resume");
+        if (targetElement) {
+          // Add the style to the cloned element within the captured document
+          targetElement.style.display = "block";
+        }
+      },
+    };
+  
+    const canvas = await html2canvas(downloadResumeDom, captureOptions);
+  
+    // Get the background color from the CSS class
+    const elementWithBgClass = document.querySelector(".re_body");
+    const computedStyle = getComputedStyle(elementWithBgClass);
+    const bgColor = computedStyle.backgroundColor;
+  
+    // Extract RGB color values from the background color
+    const rgbValues = bgColor.match(/\d+/g);
+    const red = parseInt(rgbValues[0], 10);
+    const green = parseInt(rgbValues[1], 10);
+    const blue = parseInt(rgbValues[2], 10);
+  
+    // Set the background color in the PDF
+    doc.setFillColor(red, green, blue);
+    doc.rect(
+      0, //start(for x co-ordinate)
+      0, //start(for y co-ordinate)
+      doc.internal.pageSize.width, //end(for y co-ordinate)
+      doc.internal.pageSize.height, //end(for y co-ordinate)
+      "F" //fill the color
+    ); // 'F' means fill
+    const imageData = canvas.toDataURL("image/png");
+  
+    doc.addImage(imageData, "PNG", -45, 0, 300, 200);
+    doc.save("GZ Curve.pdf");
   };
   return (
     <div>
@@ -38,10 +85,16 @@ function Home(params) {
         <div className="home--content">
           <h4 className="intro">Hi! I'm David Susairaj</h4>
           <h2 style={{ marginTop: "5px" }}>
-            <span style={{ width: "250px", display: "inline-block",color:"rgb(128 5 251)",fontSize:"13px" }}>
+            <span
+              style={{
+                width: "250px",
+                display: "inline-block",
+                color: "rgb(128 5 251)",
+                fontSize: "13px",
+              }}
+            >
               {text}
             </span>
-  
           </h2>
           <div className="socialMedia">
             <div className="socialMedia_icons">
@@ -108,8 +161,15 @@ function Home(params) {
               </div>
             </div>
           </div>
+          <div className="download_resume_div">
+            {" "}
+            <button onClick = {download}title="Download in .pdf" className="resume-downloadpdf-btn">
+              Download CV
+            </button>
+          </div>
         </div>
       </div>
+      <Resume />
     </div>
   );
 }

@@ -9,52 +9,54 @@ import jsPDF from "jspdf";
 import "jspdf-autotable";
 import autoTable from "jspdf-autotable";
 
-const Resume = () => {
-  let download = async () => {
-    const downloadResumeDom = document.getElementById("re_pdf_resume");
+export const download = async () => {
+  const downloadResumeDom = document.getElementById("re_pdf_resume");
 
-    const doc = new jsPDF();
-    const captureOptions = {
-      onclone: (docClone) => {
-        const targetElement = docClone.getElementById("re_pdf_resume");
-        if (targetElement) {
-          // Add the style to the cloned element within the captured document
-          targetElement.style.display = "block";
-        }
-      },
-    };
-
-    const canvas = await html2canvas(downloadResumeDom, captureOptions);
-
-    // Get the background color from the CSS class
-    const elementWithBgClass = document.querySelector(".re_body");
-    const computedStyle = getComputedStyle(elementWithBgClass);
-    const bgColor = computedStyle.backgroundColor;
-
-    // Extract RGB color values from the background color
-    const rgbValues = bgColor.match(/\d+/g);
-    const red = parseInt(rgbValues[0], 10);
-    const green = parseInt(rgbValues[1], 10);
-    const blue = parseInt(rgbValues[2], 10);
-
-    // Set the background color in the PDF
-    doc.setFillColor(red, green, blue);
-    doc.rect(
-      0, //start(for x co-ordinate)
-      0, //start(for y co-ordinate)
-      doc.internal.pageSize.width, //end(for y co-ordinate)
-      doc.internal.pageSize.height, //end(for y co-ordinate)
-      "F" //fill the color
-    ); // 'F' means fill
-    const imageData = canvas.toDataURL("image/png");
-
-    doc.addImage(imageData, "PNG", -45, 0, 300, 200);
-    doc.save("GZ Curve.pdf");
+  const doc = new jsPDF();
+  const captureOptions = {
+    onclone: (docClone) => {
+      const targetElement = docClone.getElementById("re_pdf_resume");
+      if (targetElement) {
+        // Add the style to the cloned element within the captured document
+        targetElement.style.display = "block";
+      }
+    },
   };
+
+  const canvas = await html2canvas(downloadResumeDom, captureOptions);
+
+  // Get the background color from the CSS class
+  const elementWithBgClass = document.querySelector(".re_body");
+  const computedStyle = getComputedStyle(elementWithBgClass);
+  const bgColor = computedStyle.backgroundColor;
+
+  // Extract RGB color values from the background color
+  const rgbValues = bgColor.match(/\d+/g);
+  const red = parseInt(rgbValues[0], 10);
+  const green = parseInt(rgbValues[1], 10);
+  const blue = parseInt(rgbValues[2], 10);
+
+  // Set the background color in the PDF
+  doc.setFillColor(red, green, blue);
+  doc.rect(
+    0, //start(for x co-ordinate)
+    0, //start(for y co-ordinate)
+    doc.internal.pageSize.width, //end(for y co-ordinate)
+    doc.internal.pageSize.height, //end(for y co-ordinate)
+    "F" //fill the color
+  ); // 'F' means fill
+  const imageData = canvas.toDataURL("image/png");
+
+  doc.addImage(imageData, "PNG", -45, 0, 300, 200);
+  doc.save("GZ Curve.pdf");
+};
+
+const Resume = () => {
+
 
   return (
     <div className="resume" id="pdfresume">
-      <div className="re_header" id="re_pdf_resume">
+      <div className="re_header" id="re_pdf_resume" style={{display:"none"}}>
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
@@ -299,7 +301,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-
+{/* 
       <div
         style={{
           margin: "auto",
@@ -309,7 +311,7 @@ const Resume = () => {
         }}
       >
         <button onClick={download}> Download</button>
-      </div>
+      </div> */}
     </div>
   );
 };

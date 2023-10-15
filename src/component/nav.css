@@ -110,7 +110,8 @@
 }
 
 .nav--menus {
-  width: 42%;
+  /* width: 42%;with resume */
+  width:32%;
 }
 
 .nav--menus--ul {
