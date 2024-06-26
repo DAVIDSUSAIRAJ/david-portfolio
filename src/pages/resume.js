@@ -192,7 +192,7 @@ const Resume = () => {
               </h4>
               <div className="re_underline">.</div>
               <p>
-                React developer specializing <strong>2</strong> years in bug
+                React developer specializing <strong>2.5</strong> years in bug
                 fixing and ui development, enhancing projects stability and user
                 experience.
               </p>
