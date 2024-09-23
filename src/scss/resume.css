@@ -36,7 +36,7 @@
 }
 .resumeRole{
   /* color: var(--resumecolor); */
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
@@ -121,7 +121,7 @@
     text-decoration: underline;
   }
   .re_socialMedia_urls .re_github_url,.re_linkedin_url,.re_mail_url,.re_whatsapp_url{
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 4px;
   }
   .re_socialMedia_urls .re_linkedin_url_div{
@@ -154,9 +154,23 @@
     font-size: 15px;
     margin-top: 8px;
   }
+  .re_backend_div_testing_tools_div{
+    transform: translateX(-62px);
+    font-size: 15px;
+    margin-top: 8px;
+    /* background-color: red; */
+  }
+  .re_backend_div_testing_tools_div span{
+    color: var(--resumecolor);;
+    font-weight: bold;
+  }
   .re_backend_div span{
     color: var(--resumecolor);;
     font-weight: bold;
+  }
+
+  .backend_skills_ul_testing{
+    transform: translateX(-49px);
   }
   .re_frontend_div span{
     color: var(--resumecolor);;
@@ -177,17 +191,31 @@
     /* background-color: red; */
   }
   .re-backend_skills_ul{
-    transform: translateX(-49px);
+    transform: translateX(-40px);
   }
   .re-backend_skills_ul ul li {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 8px;
     /* list-style-type: square; */
      list-style-type: disc;
     list-style-position: inside;
   }
+/* /// */
+.re-backend_skills_ul_testing ul {
+  transform: translateX(-28px);
+}
+
+.re-backend_skills_ul_testing  ul li {
+  font-size: 14px;
+  margin-top: 8px;
+  /* list-style-type: square; */
+   list-style-type: disc;
+  list-style-position: inside;
+}
+
+ /* ///  */
   .re-skills_ul ul li {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 8px;
     /* list-style-type: square; */
      list-style-type: disc;
@@ -203,7 +231,7 @@
     text-align: justify;
     letter-spacing: 1px;
     word-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     /* color: var(--resumecolor); */
     /* color: black; */
@@ -225,7 +253,7 @@
 
 
   .re_publish_ul div a {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--resumeAnchorTagColor);
     text-decoration: underline;
   }

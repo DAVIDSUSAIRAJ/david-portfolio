@@ -6,7 +6,7 @@ import About from "./pages/about";
 import Skills from "./pages/skills";
 import Publishes from "./pages/publishes";
 import Contact from "./pages/contact";
-// import Resume from "./pages/resume";
+import Resume from "./pages/resume";
 function App() {
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/publishes" element={<Publishes />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/resume" element={<Resume />} />
           <Route path="/*" element={<Navigate to = "/" />} />
           {/* <Route path="/:notf" element={<NotFound />} /> */}
         </Routes>

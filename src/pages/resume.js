@@ -54,7 +54,11 @@ export const download = async () => {
 const Resume = () => {
   return (
     <div className="resume" id="pdfresume">
-      <div className="re_header" id="re_pdf_resume" style={{ display: "none" }}>
+      <div
+        className="re_header"
+        id="re_pdf_resume"
+        style={{ display: "block" }}
+      >
         <div className="re_body" id="davidresume">
           <div className="da_head">
             <div>
@@ -151,11 +155,9 @@ const Resume = () => {
                 <li>CSS3</li>
                 <li>JAVASCRIPT</li>
                 <li>REACT JS</li>
+                <li>NEXT JS</li>
                 <li>REDUX</li>
                 <li>TYPESCRIPT</li>
-                <li>GIT</li>
-                <li>GITHUB</li>
-                <li> AZURE DEVOPS</li>
                 <li>SASS</li>
                 <li>METERIAL UI</li>
                 <li>BOOTSTRAP</li>
@@ -171,6 +173,17 @@ const Resume = () => {
                 <li>MONGODB</li>
               </ul>
             </div>
+            <div className="re_backend_div_testing_tools_div">
+              <span>TESING/TOOLS</span>
+            </div>
+            <div className="re-backend_skills_ul_testing">
+              <ul>
+                <li>JEST</li>
+                <li>GIT</li>
+                <li>GITHUB</li>
+                <li> AZURE DEVOPS</li>
+              </ul>
+            </div>
           </div>
           <div className="da_body">
             <div className="re_about--content">
@@ -180,19 +193,19 @@ const Resume = () => {
               <div className="re_underline">.</div>
               <p>
                 I am a web developer proficient in both front-end{" "}
-                <strong>(HTML5, CSS3, JavaScript, React.js, Redux)</strong> and
+                <strong>(HTML5, CSS3, JavaScript, React.js,Next.js, Redux)</strong> and
                 back-end <strong>(Node.js, Express.js, MongoDB)</strong>{" "}
                 technologies. I also have experience with version control{" "}
                 <strong>(Git, GitHub)</strong>, project management{" "}
                 <strong>(Azure DevOps)</strong>, and UI frameworks{" "}
-                <strong>(Material-UI, Bootstrap)</strong>.
+                <strong>(Material-UI, Bootstrap)</strong>,and testing frameworks(<strong>Jest</strong>).
               </p>
               <h4 className="re_experience">
                 <strong>EXPERIENCE:</strong>
               </h4>
               <div className="re_underline">.</div>
               <p>
-                React developer specializing <strong>2.5</strong> years in bug
+                React developer specializing <strong>3.0</strong> years in bug
                 fixing and ui development, enhancing projects stability and user
                 experience.
               </p>

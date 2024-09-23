@@ -21,12 +21,16 @@ function Skills(params) {
             <h4  style= {{margin:"5px"}}>FRONTEND:</h4>
             <div className = "frontend-content"style={{lineHeight:"20px",margin:"5px"}}>
               {" "}
-               HTML5, CSS3, SASS, JAVASCRIPT, REACT JS, REDUX, TYPESCRIPT, GIT, GITHUB, AZURE
+               HTML5, CSS3, SASS, JAVASCRIPT, REACT JS,NEXT JS, REDUX, TYPESCRIPT, 
               DEVOPS, MUI, BOOTSTRAP.
             </div>
             <h4 style= {{margin:"5px",}}>BACKEND:</h4>
               <div className = "backend-content">
               NODE JS, EXPRESS JS, MONGODB.
+              </div>
+              <h4 style= {{margin:"5px",}}>TESING/TOOLS:</h4>
+              <div className = "backend-content">
+              JEST,GIT, GITHUB, AZURE DEVOPS.
               </div>
           </div>
         </div>
