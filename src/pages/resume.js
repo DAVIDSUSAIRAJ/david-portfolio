@@ -68,7 +68,7 @@ const Resume = () => {
               <span className="resumeName">David susairaj</span>
             </div>
             <div className="re_role">
-              <span className="resumeRole">MERN STACK DEVELOPER</span>
+              <span className="resumeRole">MERN STACK DEVELOPER </span>
             </div>
             <div className="re_socialMedia">
               <div className="re_socialMedia_icons">
@@ -147,7 +147,7 @@ const Resume = () => {
             </div>
             <div className="borderdiv">.</div>
             <div className="re_frontend_div">
-              <span>FRONTEND:</span>
+              <span>FRONTEND :</span>
             </div>
             <div className="re-skills_ul">
               <ul>
@@ -159,12 +159,12 @@ const Resume = () => {
                 <li>REDUX</li>
                 <li>TYPESCRIPT</li>
                 <li>SASS</li>
-                <li>METERIAL UI</li>
+                <li>MATERIAL UI</li>
                 <li>BOOTSTRAP</li>
               </ul>
             </div>
             <div className="re_backend_div">
-              <span>BACKEND:</span>
+              <span>BACKEND :</span>
             </div>
             <div className="re-backend_skills_ul">
               <ul>
@@ -188,7 +188,7 @@ const Resume = () => {
           <div className="da_body">
             <div className="re_about--content">
               <h3 className="re_summaray">
-                <strong>SUMMARAY:</strong>
+                <strong>SUMMARY:</strong>
               </h3>
               <div className="re_underline">.</div>
               <p>
