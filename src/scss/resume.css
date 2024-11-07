@@ -85,7 +85,7 @@
 
 .re_socialMedia{
     width: 400px;
-    height: 140px;
+    height: 160px;
     /* background-color: red; */
     transform: translateX(35px);
     /* padding-left: 35px; */
@@ -95,7 +95,7 @@
   }
   .re_socialMedia_icons{
     width: 250px;
-    height: 140px;
+    height: 160px;
     /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
@@ -105,12 +105,13 @@
   }
   .re_socialMedia_urls{
     /* width: 40px; */
-    height: 140px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     /* background-color: yellow; */
     transform: translateX(-32px);
+    /* transform: translateY(-5px); */
   }
 
 

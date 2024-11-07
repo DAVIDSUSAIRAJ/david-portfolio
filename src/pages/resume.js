@@ -4,6 +4,7 @@ import Linkedin from "../images/linkedin.png";
 import Mail from "../images/emailred.png";
 import Whatsapp from "../images/whatsapp.png";
 import Github from "../images/githubround.png";
+import StackOverflow from "../images/stackOverFlow.png";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
@@ -103,6 +104,15 @@ const Resume = () => {
                     loading="eager"
                   ></img>
                 </div>
+                <div>
+                  {" "}
+                  <img
+                    src={StackOverflow}
+                    width={24}
+                    height={24}
+                    loading="eager"
+                  ></img>
+                </div>
               </div>
               <div className="re_socialMedia_urls">
                 <div className="re_github_url_div">
@@ -140,6 +150,12 @@ const Resume = () => {
                     <span className="re_whatsapp_url">9345163305</span>
                   </a>
                 </div>
+                <div className="re_whatapp_url_div">
+                  {" "}
+                  <a href="https://stackoverflow.com/users/28158685/david-susairaj" target="_blank">
+                  <span className="re_stackoverflow_url">stackoverflow</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="re_skills_div">
@@ -171,6 +187,7 @@ const Resume = () => {
                 <li>NODE JS</li>
                 <li>EXPRESS JS</li>
                 <li>MONGODB</li>
+                <li>david-unique-id(npm)</li>
               </ul>
             </div>
             <div className="re_backend_div_testing_tools_div">
@@ -194,7 +211,7 @@ const Resume = () => {
               <p>
                 I am a web developer proficient in both front-end{" "}
                 <strong>(HTML5, CSS3, JavaScript, React.js,Next.js, Redux)</strong> and
-                back-end <strong>(Node.js, Express.js, MongoDB)</strong>{" "}
+                back-end <strong>(Node.js, Express.js, MongoDB,david-uiniqe-id(npm custom ID generator))</strong>{" "}
                 technologies. I also have experience with version control{" "}
                 <strong>(Git, GitHub)</strong>, project management{" "}
                 <strong>(Azure DevOps)</strong>, and UI frameworks{" "}
@@ -244,6 +261,22 @@ const Resume = () => {
                     target="_blank"
                   >
                     https://david-portfolio-two.vercel.app/
+                  </a>
+                </div>
+                <div>
+                  <strong>Feedback Application:</strong>
+
+                  <br></br>
+                  <span>
+                  Technology:MERN with TypeScript,Jest,NPM package("david-unique-id")
+                  </span>
+                  <br></br>
+
+                  <a
+                    href="https://my-feedback-app-nu.vercel.app/"
+                    target="_blank"
+                  >
+                    https://my-feedback-app-nu.vercel.app/
                   </a>
                 </div>
                 <div>

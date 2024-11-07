@@ -58,7 +58,7 @@ function Home(params) {
       doc.rect(0, 0, doc.internal.pageSize.width, doc.internal.pageSize.height, "F");
 
       const imageData = canvas.toDataURL("image/png");
-      doc.addImage(imageData, "PNG", -55, 0, 300, 300, "", "FAST");
+      doc.addImage(imageData, "PNG", -55, -10, 300, 300, "", "FAST");
 
       doc.save("David_CV.pdf");
 
