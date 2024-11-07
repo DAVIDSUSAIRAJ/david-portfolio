@@ -26,7 +26,7 @@ function Skills(params) {
             </div>
             <h4 style= {{margin:"5px",}}>BACKEND:</h4>
               <div className = "backend-content">
-              NODE JS, EXPRESS JS, MONGODB.
+              NODE JS, EXPRESS JS, MONGODB,david-uiniqe-id(npm custom ID generator).
               </div>
               <h4 style= {{margin:"5px",}}>TESING/TOOLS:</h4>
               <div className = "backend-content">

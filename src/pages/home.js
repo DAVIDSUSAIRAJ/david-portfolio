@@ -10,6 +10,7 @@ import Github from "../images/githubround.png";
 import Linkedin from "../images/linkedin.png";
 import Mail from "../images/emailred.png";
 import Whatsapp from "../images/whatsapp.png";
+import StackOverflow from "../images/stackOverFlow.png";
 import { ToastContainer, toast } from "react-toastify"; // Import Toast
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS for notifications
 
@@ -103,6 +104,7 @@ function Home(params) {
               <img src={Linkedin} width={32} height={32} loading="eager" />
               <img src={Mail} width={27} height={27} loading="eager" />
               <img src={Whatsapp} width={28} height={28} loading="eager" />
+              <img src={StackOverflow} width={24} height={24} loading="eager" />
             </div>
             <div className="socialMedia_urls">
               <a href="https://github.com/DAVIDSUSAIRAJ" target="_blank" rel="noopener noreferrer">
@@ -114,8 +116,11 @@ function Home(params) {
               <a href="mailto:davidsusairaj1996@gmail.com" target="_blank" rel="noopener noreferrer">
                 <span className="mail_url">davidsusairaj1996@gmail.com</span>
               </a>
-              <a href="https://wa.me/+919345163305" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+919345163305" target="_blank" rel="noopener noreferrer" className="whatsapp_url_a">
                 <span className="whatsapp_url">9345163305</span>
+              </a>
+              <a href="https://stackoverflow.com/users/28158685/david-susairaj" target="_blank" rel="noopener noreferrer" className="stackOverFlow_url_a">
+                <span className="stackOverFlow_url">stackoverflow</span>
               </a>
             </div>
           </div>

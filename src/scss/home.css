@@ -100,12 +100,17 @@
   color: var(--homeAnchorTagColor) ;
   opacity: var(--homeImageOpacity);
 }
-.socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url{
+.socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url,.stackOverFlow_url{
 font-size: 13px;
 margin-left: 4px;
 }
 .socialMedia_urls .linkedin_url_div,.whatsapp_url_div{
   transform: translateY(-4px);
+}
+.stackOverFlow_url_a,.whatsapp_url_a{
+  /* background-color: red; */
+  /* margin-top: 10px; */
+  transform: translateY(3px);
 }
 .socialMedia_urls .github_url_div{
   transform: translateY(-8px);
@@ -113,6 +118,7 @@ margin-left: 4px;
 
 .resume-downloadpdf-btn {
   font-size: 12px;
+  margin-top: 5px;
   padding: 5px;
   border-radius: 5px;
   border: none;
@@ -174,7 +180,7 @@ margin-left: 4px;
     word-spacing: 2px;
     transform: translateY(-30%);
   }
-  .socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url{
+  .socialMedia_urls .github_url,.linkedin_url,.mail_url,.whatsapp_url,.stackOverFlow_url{
     font-size: 14px;
     }
     .download_resume_div{

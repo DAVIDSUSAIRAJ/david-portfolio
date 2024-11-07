@@ -16,6 +16,25 @@ function Publishes(params) {
         <div className="publishes--content">
           <div>
             <div className="webapp">
+              <h5>Feedback Application:</h5>
+              <h6>
+                Technology:MERN with TypeScript,Jest,NPM package("david-unique-id")
+              </h6>
+              <span
+                style={{
+                  fontSize: "12px",
+                  color: "#0000ee",
+                }}
+              >
+                <a
+                  href="https://my-feedback-app-nu.vercel.app/"
+                  target="_blank"
+                >
+                  https://my-feedback-app-nu.vercel.app/
+                </a>
+              </span>
+            </div>
+            <div className="webapp">
               <h5>Quiz Application:</h5>
               <h6>Technology: html5,sass and reactjs</h6>
               <span
@@ -103,7 +122,7 @@ function Publishes(params) {
               </span>
             </div>
 
-            <div className="webapp">
+            {/* <div className="webapp">
               <h5>Stopwatch Application:</h5>
               <h6>Technology: html5,sass and reactjs</h6>
               <span
@@ -119,7 +138,7 @@ function Publishes(params) {
                   https://davidsusairaj.github.io/stopwatch-react-app/
                 </a>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
