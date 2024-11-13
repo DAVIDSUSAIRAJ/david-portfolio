@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { NavLink } from "react-router-dom";
 import "../component/nav.css";
 import { FaBars, FaTimes, PiSunLight } from "react-icons/fa";
@@ -108,4 +109,4 @@ function Nav(props) {
     </div>
   );
 }
-export default Nav;
+export default  memo(Nav);
