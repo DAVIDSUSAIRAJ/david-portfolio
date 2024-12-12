@@ -281,7 +281,7 @@ const Resume = () => {
                 </div>
 
                 <div>
-                  <strong>Mini Ecommerce Application:</strong>
+                  <strong>Mini eCommerce Application:</strong>
 
                   <br></br>
                   <span>

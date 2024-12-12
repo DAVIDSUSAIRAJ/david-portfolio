@@ -35,7 +35,7 @@ function Publishes(params) {
               </span>
             </div>
             <div className="webapp">
-              <h5>Mini Ecommerce Application:</h5>
+              <h5>Mini eCommerce Application:</h5>
               <h6>
                 Technology:MERN.
               </h6>
