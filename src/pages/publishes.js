@@ -35,6 +35,26 @@ function Publishes(params) {
               </span>
             </div>
             <div className="webapp">
+              <h5>Mini Ecommerce Application:</h5>
+              <h6>
+                Technology:MERN.
+              </h6>
+              <span
+                style={{
+                  fontSize: "12px",
+                  color: "#0000ee",
+                }}
+              >
+                <a
+                  href="https://mini-ecommerce-project-6mai.vercel.app/
+ "
+                  target="_blank"
+                >
+                  https://mini-ecommerce-project-6mai.vercel.app/
+                </a>
+              </span>
+            </div>
+            <div className="webapp">
               <h5>Quiz Application:</h5>
               <h6>Technology: html5,sass and reactjs</h6>
               <span
@@ -104,7 +124,7 @@ function Publishes(params) {
               </span>
             </div>
 
-            <div className="webapp">
+            {/* <div className="webapp">
               <h5>Counter Application:</h5>
               <h6>Technology: html5,sass,reactjs and redux</h6>
               <span
@@ -120,7 +140,7 @@ function Publishes(params) {
                   https://davidsusairaj.github.io/redux-counter-app/
                 </a>
               </span>
-            </div>
+            </div> */}
 
             {/* <div className="webapp">
               <h5>Stopwatch Application:</h5>

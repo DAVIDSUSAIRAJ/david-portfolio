@@ -279,6 +279,25 @@ const Resume = () => {
                     https://my-feedback-app-nu.vercel.app/
                   </a>
                 </div>
+
+                <div>
+                  <strong>Mini Ecommerce Application:</strong>
+
+                  <br></br>
+                  <span>
+                  Technology:MERN
+                  </span>
+                  <br></br>
+
+                  <a
+                    href="https://mini-ecommerce-project-6mai.vercel.app//"
+                    target="_blank"
+                  >
+                   https://mini-ecommerce-project-6mai.vercel.app/
+                  </a>
+                </div>
+
+
                 <div>
                   <strong>Quiz Application:</strong>
 
