@@ -203,6 +203,7 @@ const Resume = () => {
             </div>
           </div>
           <div className="da_body">
+            <h1 style={{fontSize: "25px",marginTop:"7px",transform:"translateX(-48px)",fontWeight:"bold"}}>RESUME</h1>
             <div className="re_about--content">
               <h3 className="re_summaray">
                 <strong>SUMMARY:</strong>
@@ -252,7 +253,7 @@ const Resume = () => {
 
                   <br></br>
                   <span>
-                    Technology: html5,css,react js,express js, mongodb
+                    Technology:MERN
                   </span>
                   <br></br>
 
