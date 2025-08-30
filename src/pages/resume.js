@@ -223,7 +223,7 @@ const Resume = () => {
               </h4>
               <div className="re_underline">.</div>
               <p>
-                React developer specializing <strong>3.0</strong> years in bug
+                React developer specializing <strong>4.0</strong> years in bug
                 fixing and ui development, enhancing projects stability and user
                 experience.
               </p>
@@ -248,136 +248,113 @@ const Resume = () => {
               </h4>
               <div className="re_underline">.</div>
               <div className="re_publish_ul">
-                <div>
-                  <strong>Portfolio Application:</strong>
+              <div>
+  <strong>SwiftTalk – Real-Time Chat & Media Sharing:</strong>
+  <br />
+  <span>
+    Technology: React, Supabase (Realtime), WebRTC, Audio/Video Calls, File Sharing
+  </span>
+  <br />
+  <a href="https://chat-osbe.onrender.com/" target="_blank">
+    https://chat-osbe.onrender.com/
+  </a>
+</div>
 
-                  <br></br>
-                  <span>
-                    Technology:MERN
-                  </span>
-                  <br></br>
+<div>
+  <strong>Mad Wanderings – Multilingual Book Web App:</strong>
+  <br />
+  <span>
+    Technology: React, Chatbase (Chatbot), Multilingual Support (Tamil, English, Hindi, Telugu, Malayalam)
+  </span>
+  <br />
+  <a href="https://madwanderings.vercel.app/" target="_blank">
+    https://madwanderings.vercel.app/
+  </a>
+</div>
 
-                  <a
-                    href="https://david-portfolio-two.vercel.app/"
-                    target="_blank"
-                  >
-                    https://david-portfolio-two.vercel.app/
-                  </a>
-                </div>
-                <div>
-                  <strong>Feedback Application:</strong>
+<div>
+  <strong>3D Portfolio Website:</strong>
+  <br />
+  <span>Technology: React, Three.js</span>
+  <br />
+  <a href="https://3-d-david-portfolio-ysab.vercel.app/" target="_blank">
+    https://3-d-david-portfolio-ysab.vercel.app/
+  </a>
+</div>
 
-                  <br></br>
-                  <span>
-                  Technology:MERN with TypeScript,Jest,NPM package("david-unique-id")
-                  </span>
-                  <br></br>
+<div>
+  <strong>2D Portfolio Website:</strong>
+  <br />
+  <span>Technology: MERN</span>
+  <br />
+  <a href="https://david-portfolio-two.vercel.app/" target="_blank">
+    https://david-portfolio-two.vercel.app/
+  </a>
+</div>
 
-                  <a
-                    href="https://my-feedback-app-nu.vercel.app/"
-                    target="_blank"
-                  >
-                    https://my-feedback-app-nu.vercel.app/
-                  </a>
-                </div>
+<div>
+  <strong>Feedback System:</strong>
+  <br />
+  <span>
+    Technology: MERN with TypeScript, Jest, and custom NPM package ("david-unique-id")
+  </span>
+  <br />
+  <a href="https://my-feedback-app-nu.vercel.app/" target="_blank">
+    https://my-feedback-app-nu.vercel.app/
+  </a>
+</div>
 
-                <div>
-                  <strong>Mini eCommerce Application:</strong>
+<div>
+  <strong>Mini eCommerce Platform:</strong>
+  <br />
+  <span>Technology: MERN</span>
+  <br />
+  <a href="https://mini-ecommerce-project-6mai.vercel.app/" target="_blank">
+    https://mini-ecommerce-project-6mai.vercel.app/
+  </a>
+</div>
 
-                  <br></br>
-                  <span>
-                  Technology:MERN
-                  </span>
-                  <br></br>
+<div>
+  <strong>Quiz App:</strong>
+  <br />
+  <span>Technology: HTML5, Sass, React.js</span>
+  <br />
+  <a href="https://davidsusairaj.github.io/quiz-react-app/" target="_blank">
+    https://davidsusairaj.github.io/quiz-react-app/
+  </a>
+</div>
 
-                  <a
-                    href="https://mini-ecommerce-project-6mai.vercel.app//"
-                    target="_blank"
-                  >
-                   https://mini-ecommerce-project-6mai.vercel.app/
-                  </a>
-                </div>
+<div>
+  <strong>Todo App:</strong>
+  <br />
+  <span>Technology: HTML5, Sass, React.js</span>
+  <br />
+  <a href="https://davidsusairaj.github.io/todo-react-app/" target="_blank">
+    https://davidsusairaj.github.io/todo-react-app/
+  </a>
+</div>
+
+<div>
+  <strong>RoadmapMaster – Planning Tool:</strong>
+  <br />
+  <span>Technology: HTML5, Sass, React.js</span>
+  <br />
+  <a href="https://davidsusairaj.github.io/web-design-react/" target="_blank">
+    https://davidsusairaj.github.io/web-design-react/
+  </a>
+</div>
+
+<div>
+  <strong>Journey Learning Project:</strong>
+  <br />
+  <span>Technology: HTML5, Sass, JavaScript</span>
+  <br />
+  <a href="https://davidsusairaj.github.io/Web-first-Design/" target="_blank">
+    https://davidsusairaj.github.io/Web-first-Design/
+  </a>
+</div>
 
 
-                <div>
-                  <strong>Quiz Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass and react js</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/quiz-react-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/quiz-react-app/
-                  </a>
-                </div>
-                <div>
-                  <strong>Todo Application:</strong>
-                  <br></br>
-                  <span>Technology: html5,sass and react js</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/todo-react-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/todo-react-app/
-                  </a>
-                </div>
-
-                <div>
-                  <strong>RoadmapMaster Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass and react js</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/web-design-react/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/web-design-react/
-                  </a>
-                </div>
-                <div>
-                  <strong>Learning of Journey Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass and js</span>
-                  <br></br>
-
-                  <a
-                    href="https://davidsusairaj.github.io/Web-first-Design/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/Web-first-Design/
-                  </a>
-                </div>
-                <div>
-                  <strong>Stopwatch Application:</strong>
-                  <br></br>
-                  <span>Technology: html5,sass and reactjs</span>
-                  <br></br>
-                  <a
-                    href="https://davidsusairaj.github.io/stopwatch-react-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/stopwatch-react-app/
-                  </a>
-                </div>
-
-                <div>
-                  <strong>Counter Application:</strong>
-
-                  <br></br>
-                  <span>Technology: html5,sass,react js and redux</span>
-                  <br></br>
-                  <a
-                    href=" https://davidsusairaj.github.io/redux-counter-app/"
-                    target="_blank"
-                  >
-                    https://davidsusairaj.github.io/redux-counter-app/
-                  </a>
-                </div>
               </div>
             </div>
           </div>
