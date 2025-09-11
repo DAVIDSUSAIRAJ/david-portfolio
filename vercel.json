@@ -1,6 +1,0 @@
-{
-  "version": 2,
-  "buildCommand": "npm run build",
-  "framework": "create-react-app",
-  "nodeVersion": "22.x"
-}
