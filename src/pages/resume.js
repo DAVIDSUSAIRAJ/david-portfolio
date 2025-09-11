@@ -1,5 +1,5 @@
 import "../scss/resume.css";
-import davidimg from "../images/david.png";
+import davidimg from "../images/davidimg.jpg";
 import Linkedin from "../images/linkedin.png";
 import Mail from "../images/emailred.png";
 import Whatsapp from "../images/whatsapp.png";
@@ -62,8 +62,8 @@ const Resume = () => {
       >
         <div className="re_body" id="davidresume">
           <div className="da_head">
-            <div>
-              <img className="david-img" width="200px" src={davidimg}></img>
+            <div style={{marginTop:"50px"}}>
+              <img className="david-img" width="220px" height = "200px" src={davidimg}></img>
             </div>
             <div className="re_name">
               <span className="resumeName">David susairaj</span>
