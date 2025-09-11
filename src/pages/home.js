@@ -28,7 +28,7 @@ function Home(params) {
 
   const download = async () => {
     setLoading(true); // Show loader before starting the PDF generation
-    const toastId = toast.info("Preparing your CV download..."); // Show a notification when the download starts
+    const toastId = toast.info("Preparing your CV download....."); // Show a notification when the download starts
 
     try {
       const downloadResumeDom = document.getElementById("re_pdf_resume");
