@@ -29,7 +29,7 @@ function Nav(props) {
             className="nav--logo__img"
             style={{ textDecoration: "none", color: "black" }}
           >
-            <span className="developer-name">David</span>
+            <span className="developer-name">David Susairaj</span>
           </NavLink>
           <span onClick={changeTheme}>
             {isdarkTheme ? (
