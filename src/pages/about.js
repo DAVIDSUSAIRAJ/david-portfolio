@@ -16,7 +16,7 @@ function About(params) {
           </p>
           <h4>Experience:</h4>
           <p>
-            React developer specializing <strong>3.0</strong> years in bug fixing and ui
+            React developer specializing <strong>4.0</strong> years in bug fixing and ui
             development, enhancing projects stability and user experience.
           </p>
           <h4>Education:</h4>
